@@ -7,6 +7,7 @@ $(document).ready(function () {
   $(".responsive-slider").slick({
     infinite: true,
     speed: 500,
+    mobileFirst: true,
     easing: "ease-in-out",
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -15,7 +16,14 @@ $(document).ready(function () {
     // centerMode: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 760,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
