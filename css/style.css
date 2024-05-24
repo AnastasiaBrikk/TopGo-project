@@ -686,9 +686,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team__item {
@@ -707,7 +707,9 @@ header {
 }
 
 .team__item-img {
-  min-height: 280px;
+  height: 28.215%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team__name {
@@ -726,6 +728,7 @@ header {
   font-style: italic;
   text-align: center;
   color: #fff;
+  max-width: 230px;
 }
 
 .team__btn {
@@ -1388,7 +1391,7 @@ footer {
 }
 
 .footer__media-link svg {
-  width: 1.666vw;
+  width: 24px;
 }
 
 .footer__media-link svg path {
@@ -1552,8 +1555,12 @@ footer {
     line-height: 3rem;
   }
 
+  .team__superhero {
+    width: 25vw;
+  }
+
   .team__item-img {
-    height: 37.5vh;
+    height: 30vh;
   }
 
   .team__text {
@@ -1563,7 +1570,7 @@ footer {
     width: max-content;
     padding-right: 15rem;
     padding-left: 8rem;
-    padding-bottom: 40px;
+    padding-bottom: 3rem;
   }
 
   .team__bg-text {
@@ -1580,13 +1587,17 @@ footer {
     font-size: 1.6rem;
   }
 
+  .questions {
+    height: 65vh;
+  }
+
   .questions__hero {
-    right: 10vw;
+    right: 12vw;
     top: 12vh;
   }
 
   .questions__smile {
-    left: 10vw;
+    left: 12vw;
     top: 10vh;
   }
 
@@ -2769,6 +2780,320 @@ footer {
 
   .footer__company-info {
     font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .center {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .top__skolkovo-icon {
+    right: 80px;
+  }
+
+  .about__cycle {
+    left: 1px;
+    max-width: 250px;
+  }
+
+  .about__title {
+    font-size: 24px;
+    width: 338px;
+    height: 70px;
+    background-size: cover;
+  }
+
+  .about__text {
+    font-size: 18px;
+  }
+
+  .team__title {
+    font-size: 22px;
+  }
+
+  .team__text {
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  .team__bg-text {
+    width: 47vw;
+  }
+
+  .team__title-bg {
+    height: 80px;
+    width: 535px;
+    background-image: url("../img/tablet-team-bg-title.svg");
+  }
+
+  .questions {
+    height: 85vh;
+  }
+
+  .questions__hero {
+    top: 20vh;
+    min-width: 150px;
+  }
+
+  .questions__smile {
+    top: 15vh;
+    min-width: 175px;
+  }
+
+  .questions__phrase_1 {
+    width: 256px;
+    height: 100px;
+    left: 20px;
+  }
+
+  .questions__phrase_2 {
+    width: 317px;
+    height: 130px;
+    right: 0;
+  }
+
+  .questions__phrase_3 {
+    height: 90px;
+    width: 300px;
+    left: 0;
+  }
+
+  .questions__phrase_4 {
+    height: 80px;
+    width: 299px;
+    right: 0;
+  }
+
+  .questions__phrase_5 {
+    height: 100px;
+    width: 341px;
+    left: 0;
+  }
+
+  .questions__phrase_6 {
+    height: 90px;
+    width: 235px;
+    right: -10px;
+  }
+
+  .questions__text {
+    font-size: 17px;
+    max-width: 250px;
+  }
+
+  .btn-up {
+    bottom: 110px;
+    width: 50px;
+  }
+
+  .top__tel {
+    width: 50px;
+  }
+
+  .top__tel_form-close {
+    width: 50px;
+  }
+
+  .form__title-box {
+    width: 365px;
+    height: 70px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+
+  .form__text {
+    font-size: 18px;
+  }
+
+  .form__box {
+    width: 45vw;
+  }
+
+  .form__el5 {
+    top: -28.5%;
+  }
+
+  .news__title-bg {
+    height: 70px;
+    width: 431px;
+  }
+
+  .news__title {
+    font-size: 24px;
+  }
+
+  .questions__title {
+    font-size: 24px;
+  }
+
+  .questions__heading img {
+    height: 90px;
+    width: 402px;
+  }
+
+  .questions__title_qt2 {
+    left: 58%;
+  }
+
+  .footer__apps_title {
+    font-size: 16px;
+  }
+
+  .footer__links_title {
+    font-size: 16px;
+  }
+
+  .footer__link {
+    font-size: 13px;
+  }
+
+  .footer__contacts-text p {
+    font-size: 13px;
+  }
+
+  .footer__links_sections {
+    gap: 4vw;
+  }
+
+  .footer__apps_icon {
+    width: 10vw;
+  }
+
+  .footer__links-btm {
+    gap: 1vw;
+  }
+
+  .footer__link-vacancy {
+    max-width: 170px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .center {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .btn-up {
+    bottom: 130px;
+    width: 5vw;
+  }
+
+  .top__tel {
+    width: 5vw;
+  }
+
+  .top__tel_form-close {
+    width: 5vw;
+  }
+
+  .questions {
+    height: 75vh;
+  }
+
+  .questions__smile {
+    top: 15vh;
+    left: -15px;
+  }
+
+  .questions__hero {
+    top: 18vh;
+  }
+
+  .questions__phrase_1 {
+    left: -1.4vw;
+  }
+
+  .questions__phrase_3 {
+    left: -1.4vw;
+  }
+
+  .questions__phrase_5 {
+    left: -1.4vw;
+  }
+
+  .questions__phrase_2 {
+    right: -1.4vw;
+  }
+
+  .questions__phrase_4 {
+    right: -1.4vw;
+  }
+
+  .questions__phrase_6 {
+    right: -1.4vw;
+  }
+
+  .team {
+    height: 100vh;
+  }
+
+  .team__text {
+    padding-bottom: 15px;
+  }
+
+  .form {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1799px) {
+  .questions {
+    height: 70vh;
+  }
+
+  .questions__smile {
+    top: 13vh;
+    left: -50px;
+    width: 230px;
+  }
+
+  .questions__hero {
+    top: 14vh;
+    right: -10px;
+    width: 200px;
+  }
+
+  .team {
+    padding-bottom: 25%;
+  }
+
+  .btn-up {
+    bottom: 125px;
+  }
+
+  .form {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1999px) {
+  .questions {
+    height: 70vh;
+  }
+
+  .questions__smile {
+    top: 13vh;
+    left: -50px;
+    width: 250px;
+  }
+
+  .questions__hero {
+    top: 14vh;
+    right: -10px;
+    width: 225px;
+  }
+
+  .btn-up {
+    bottom: 150px;
+  }
+
+  .team {
+    height: 100vh;
   }
 }
 
