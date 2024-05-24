@@ -2,9 +2,9 @@ import * as jsFunctions from "./modules/functions.js";
 
 jsFunctions.isWebp();
 
-//slider
+//slider news
 $(document).ready(function () {
-  $(".responsive-slider").slick({
+  $(".news-slider").slick({
     infinite: true,
     speed: 500,
     mobileFirst: true,
@@ -19,27 +19,63 @@ $(document).ready(function () {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 760,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 300,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
-    ]
+    ],
+  });
+});
+
+//slider team mobile
+$(document).ready(function () {
+  $(".team__slider").slick({
+    infinite: true,
+    speed: 300,
+    easing: "ease-in-out",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 
@@ -72,8 +108,8 @@ const close = document.querySelector(".top__tel_form-close");
 const form = document.querySelector(".header__form");
 
 // Устанавливаем начальное состояние блока формы
-form.style.display = 'none';
-close.style.display = 'none';
+form.style.display = "none";
+close.style.display = "none";
 // button.style.display = "block";
 
 // Добавляем обработчик события на кнопку
@@ -87,7 +123,6 @@ button.addEventListener("click", function () {
   // }
 
   if (form.style.display === "none") {
-    
     form.style.display = "block";
     close.style.display = "block";
     button.style.display = "none";
@@ -97,10 +132,9 @@ button.addEventListener("click", function () {
     fadeIn(form);
     fadeIn(close);
   } else {
-      fadeOut(form);
-      fadeOut(close);
+    fadeOut(form);
+    fadeOut(close);
     // Плавное исчезновение блока
-    
   }
 });
 
@@ -138,3 +172,63 @@ function fadeOut(element) {
     opacity -= 0.1;
   }, 30);
 }
+
+//burger-menu
+
+const burgerBtn = document.querySelector(".header__burger");
+
+burgerBtn.style.display = 'none';
+
+if (window.innerWidth <= 768 ) {
+  burgerBtn.style.display = 'block'
+}
+
+const burgerClose = document.querySelector(".header__burger-close");
+
+burgerClose.style.display = "none";
+
+const burgerMenu = document.querySelector(".header__burger-menu");
+
+burgerMenu.style.display = "none";
+
+burgerBtn.addEventListener("click", function () {
+  if (burgerMenu.style.display === "none") {
+    burgerMenu.style.opacity = 0;
+    burgerClose.style.opacity = 0;
+    burgerClose.style.display = "block";
+    burgerBtn.style.display = "none";
+    burgerMenu.style.display = "flex";
+    fadeIn(burgerClose);
+    fadeIn(burgerMenu)
+  } else {
+    fadeOut(burgerClose);
+    fadeOut(burgerMenu);
+  }
+});
+
+burgerClose.addEventListener("click", function () {
+  burgerClose.style.display = 'none';
+  burgerBtn.style.opacity = 0;
+  burgerBtn.style.display = 'block';
+  fadeIn(burgerBtn);
+  fadeOut(burgerMenu);
+})
+
+//скролл к блокам по ссылкам в меню
+
+// const newsBlock = document.getElementById("menu-news");
+// const teamBlock = document.getElementById("menu-team");
+
+$("#menu-news").click(function() { // ID откуда кливаем
+  $('html, body').animate({
+  scrollTop: $(".news").offset().top // класс объекта к которому приезжаем
+  }, 1000); // Скорость прокрутки
+ });
+
+ $("#menu-team").click(function() { // ID откуда кливаем
+  $('html, body').animate({
+  scrollTop: $(".team").offset().top // класс объекта к которому приезжаем
+  }, 1000); // Скорость прокрутки
+ });
+
+
