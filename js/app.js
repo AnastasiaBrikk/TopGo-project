@@ -79,6 +79,24 @@ $(document).ready(function () {
   });
 });
 
+//slider partners
+$(document).ready(function () {
+  $(".partner-partners__slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    adaptiveHeight: true,
+    speed: 1500,
+    arrows: false,
+    dots: false,
+    draggable: true,
+    infinite: true,
+    useTransform: true,
+    cssEase: 'linear',
+  });
+});
+
 // Кнопка "наверх"
 const btnUp = document.querySelector(".btn-up");
 
@@ -177,10 +195,10 @@ function fadeOut(element) {
 
 const burgerBtn = document.querySelector(".header__burger");
 
-burgerBtn.style.display = 'none';
+burgerBtn.style.display = "none";
 
-if (window.innerWidth <= 768 ) {
-  burgerBtn.style.display = 'block'
+if (window.innerWidth <= 768) {
+  burgerBtn.style.display = "block";
 }
 
 const burgerClose = document.querySelector(".header__burger-close");
@@ -199,7 +217,7 @@ burgerBtn.addEventListener("click", function () {
     burgerBtn.style.display = "none";
     burgerMenu.style.display = "flex";
     fadeIn(burgerClose);
-    fadeIn(burgerMenu)
+    fadeIn(burgerMenu);
   } else {
     fadeOut(burgerClose);
     fadeOut(burgerMenu);
@@ -207,28 +225,34 @@ burgerBtn.addEventListener("click", function () {
 });
 
 burgerClose.addEventListener("click", function () {
-  burgerClose.style.display = 'none';
+  burgerClose.style.display = "none";
   burgerBtn.style.opacity = 0;
-  burgerBtn.style.display = 'block';
+  burgerBtn.style.display = "block";
   fadeIn(burgerBtn);
   fadeOut(burgerMenu);
-})
+});
 
 //скролл к блокам по ссылкам в меню
 
 // const newsBlock = document.getElementById("menu-news");
 // const teamBlock = document.getElementById("menu-team");
 
-$("#menu-news").click(function() { // ID откуда кливаем
-  $('html, body').animate({
-  scrollTop: $(".news").offset().top // класс объекта к которому приезжаем
-  }, 1000); // Скорость прокрутки
- });
+$("#menu-news").click(function () {
+  // ID откуда кливаем
+  $("html, body").animate(
+    {
+      scrollTop: $(".news").offset().top, // класс объекта к которому приезжаем
+    },
+    1000
+  ); // Скорость прокрутки
+});
 
- $("#menu-team").click(function() { // ID откуда кливаем
-  $('html, body').animate({
-  scrollTop: $(".team").offset().top // класс объекта к которому приезжаем
-  }, 1000); // Скорость прокрутки
- });
-
-
+$("#menu-team").click(function () {
+  // ID откуда кливаем
+  $("html, body").animate(
+    {
+      scrollTop: $(".team").offset().top, // класс объекта к которому приезжаем
+    },
+    1000
+  ); // Скорость прокрутки
+});
