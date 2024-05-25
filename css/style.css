@@ -1906,7 +1906,7 @@ footer {
 
   .questions {
     height: 667px;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -2204,7 +2204,7 @@ footer {
 
   .questions {
     min-height: 667px;
-    background-size: contain;
+    background-size: cover;
   }
 
   .questions__box {
@@ -2580,7 +2580,7 @@ footer {
   .questions {
     min-height: 667px;
     height: 90vh;
-    background-size: contain;
+    background-size: cover;
   }
 
   .team {
