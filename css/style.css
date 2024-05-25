@@ -949,7 +949,7 @@ header {
 
 .news-slider .slick-arrow {
   position: absolute;
-  top: 9.0277vh;
+  top: 25%;
   z-index: 10;
   font-size: 0;
   background-color: transparent;
@@ -959,7 +959,7 @@ header {
 }
 
 .news-slider .slick-arrow.slick-prev {
-  left: 0;
+  left: -10px;
   background: url("../img/news-arrow-l.svg") 0 0 no-repeat;
 }
 
@@ -968,7 +968,7 @@ header {
 }
 
 .news-slider .slick-arrow.slick-next {
-  right: 0;
+  right: -10px;
   background: url("../img/news-arrow-r.svg") 0 0 no-repeat;
 }
 
@@ -1588,7 +1588,7 @@ footer {
   }
 
   .questions {
-    height: 65vh;
+    max-height: 800px;
   }
 
   .questions__hero {
@@ -1619,6 +1619,18 @@ footer {
 
   .news__btn {
     font-size: 1rem;
+  }
+
+  .news-slider .slick-arrow {
+    top: 24%;
+  }
+
+  .news-slider .slick-arrow.slick-next {
+    right: 0;
+  }
+
+  .news-slider .slick-arrow.slick-prev {
+    left: 0;
   }
 
   footer {
@@ -1663,7 +1675,7 @@ footer {
   }
 
   .questions {
-    height: 41vh;
+    min-height: 400px;
     position: relative;
   }
 
@@ -1686,7 +1698,7 @@ footer {
   }
 
   .about {
-    height: 80vh;
+    height: 82vh;
   }
 
   .about__win-win {
@@ -1840,6 +1852,10 @@ footer {
     left: 4.8vw;
   }
 
+  .team {
+    height: 100vh;
+  }
+
   .team__el1 {
     display: none;
   }
@@ -1889,6 +1905,7 @@ footer {
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 15px;
+    max-width: none;
   }
 
   .team__superhero {
@@ -1922,7 +1939,6 @@ footer {
     padding-bottom: 30px;
     padding-left: 20px;
     bottom: 125px;
-    left: 30px;
   }
 
   .team__slider .slick-arrow {
@@ -1994,7 +2010,7 @@ footer {
     background-image: url("../img/mobile-bg-q-1.jpg"); }
 
   .questions {
-    height: 100vh;
+    background-size: cover;
   }
 
   .questions__box {
@@ -2074,7 +2090,7 @@ footer {
     top: 0;
     left: 70px;
     width: 180px;
-    height: 71px;
+    height: 85px;
     padding-right: 0;
     padding-bottom: 20px;
   }
@@ -2093,7 +2109,7 @@ footer {
     padding-right: 20px;
     padding-bottom: 0;
     width: 186px;
-    height: 75px;
+    height: 85px;
     top: 75px;
     right: 120px;
   }
@@ -2116,7 +2132,7 @@ footer {
     padding-right: 0;
     padding-bottom: 0;
     width: 205px;
-    height: 65px;
+    height: 70px;
     top: 185px;
     left: 60px;
   }
@@ -2171,7 +2187,7 @@ footer {
     padding-right: 0;
     padding-bottom: 0;
     width: 225px;
-    height: 66px;
+    height: 78px;
     top: 344px;
     left: 70px;
   }
@@ -2194,7 +2210,7 @@ footer {
     padding-right: 25px;
     padding-bottom: 0;
     width: 177px;
-    height: 65px;
+    height: 70px;
     top: 430px;
     right: 130px;
   }
@@ -2358,9 +2374,9 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .about {
-    height: 90vh;
+    max-height: 710px;
   }
 
   .news {
@@ -2369,6 +2385,12 @@ footer {
 
   .questions {
     height: 90vh;
+  }
+
+  .team {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .team__position {
@@ -2560,7 +2582,7 @@ footer {
 
   .team__bg-text {
     background-image: url("../img/tablet-team-bg-text.svg");
-    bottom: 82px;
+    bottom: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2927,7 +2949,7 @@ footer {
   }
 
   .questions {
-    height: 85vh;
+    max-height: 660px;
   }
 
   .questions__hero {
@@ -3090,7 +3112,7 @@ footer {
   }
 
   .questions {
-    min-height: 70vh;
+    max-height: 710px;
   }
 
   .questions__smile {
@@ -3137,6 +3159,14 @@ footer {
   .form {
     padding-top: 35px;
   }
+
+  .news-slider .slick-arrow.slick-next {
+    right: -15px;
+  }
+
+  .news-slider .slick-arrow.slick-prev {
+    left: -15px;
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
@@ -3167,6 +3197,14 @@ footer {
   .form {
     padding-top: 35px;
   }
+
+  .news-slider .slick-arrow.slick-next {
+    right: -15px;
+  }
+
+  .news-slider .slick-arrow.slick-prev {
+    left: -15px;
+  }
 }
 
 @media (min-width: 1800px) and (max-width: 2000px) {
@@ -3184,6 +3222,12 @@ footer {
     top: 14vh;
     right: -10px;
     width: 225px;
+  }
+
+  .news-slider .slick-arrow {
+    top: 30%;
+    width: 30px;
+    height: 70px;
   }
 
   .btn-up {
