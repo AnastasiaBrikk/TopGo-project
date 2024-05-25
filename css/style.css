@@ -221,6 +221,47 @@
   bottom: -200px;
 }
 
+.no-webp .partner-about{
+  background-image: url("../img/part-about-bg.jpg"); }
+
+.partner-about {
+  padding-top: 84px;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 700px;
+}
+
+.partner-about__text {
+  padding-top: 42px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  width: 59vw;
+  color: #fff;
+  max-width: 847px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.partner-about__el2 {
+  position: absolute;
+  left: -1px;
+  width: 294px;
+  height: 400px;
+  bottom: -200px;
+}
+
+.partner-about__driver {
+  position: absolute;
+  bottom: 0;
+  right: 55px;
+}
+
 *,
 *::before,
 *::after {
@@ -1865,6 +1906,7 @@ footer {
 
   .questions {
     height: 667px;
+    background-size: contain;
   }
 }
 
@@ -1970,7 +2012,7 @@ footer {
     background-image: url("../img/mobile-bg-about.jpg"); }
 
   .about {
-    height: 100vh;
+    max-height: 710px;
     padding-top: 40px;
   }
 
@@ -2003,7 +2045,8 @@ footer {
   }
 
   .team {
-    height: 100vh;
+    min-height: 700px;
+    max-height: 100vh;
   }
 
   .team__el1 {
@@ -2121,7 +2164,7 @@ footer {
 
   .news {
     padding-top: 60px;
-    height: 100vh;
+    height: 88vh;
     background-position: bottom;
     padding-left: 30px;
     padding-right: 30px;
@@ -2160,7 +2203,8 @@ footer {
     background-image: url("../img/mobile-bg-q-1.jpg"); }
 
   .questions {
-    background-size: cover;
+    min-height: 667px;
+    background-size: contain;
   }
 
   .questions__box {
@@ -2534,7 +2578,9 @@ footer {
   }
 
   .questions {
+    min-height: 667px;
     height: 90vh;
+    background-size: contain;
   }
 
   .team {
@@ -3390,6 +3436,8 @@ footer {
 }
 
 .webp .partner-top{ background-image: url(../img/part-top-bg.webp); }
+
+.webp .partner-about{ background-image: url(../img/part-about-bg.webp); }
 
 .webp .top{ background-image: url(../img/bg-top.webp); }
 
