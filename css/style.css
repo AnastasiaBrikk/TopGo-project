@@ -1659,7 +1659,7 @@ header {
 }
 
 .team__item-img {
-  height: 28.215%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
