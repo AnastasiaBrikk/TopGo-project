@@ -296,6 +296,32 @@
   grid-auto-flow: row dense;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.partner-advantages__adv-spoiler {
+  font-size: 13px;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+.partner-advantages .spoiler1 {
+  background-image: url("../img/part-adv-spoiler1.svg");
+  width: 312px;
+  height: 76px;
+  display: none;
+  position: absolute;
+  top: -65px;
+  left: -150px;
+  padding: 12px 25px 31px 24px;
+  text-align: center;
 }
 .partner-advantages .adv1 {
   grid-area: 1/1/2/3;
@@ -307,6 +333,20 @@
   justify-self: end;
   align-self: end;
 }
+.partner-advantages .adv1:hover ~ .spoiler1 {
+  display: flex;
+}
+.partner-advantages .spoiler2 {
+  background-image: url("../img/part-adv-spoiler2.svg");
+  width: 247px;
+  height: 131px;
+  display: none;
+  position: absolute;
+  top: -77px;
+  right: 140px;
+  padding: 11px 11px 56px 12px;
+  text-align: center;
+}
 .partner-advantages .adv2 {
   grid-area: 1/3/3/5;
   color: #fff;
@@ -314,6 +354,20 @@
   height: 149px;
   justify-self: stretch;
   align-self: end;
+}
+.partner-advantages .adv2:hover ~ .spoiler2 {
+  display: flex;
+}
+.partner-advantages .spoiler3 {
+  background-image: url("../img/part-adv-spoiler3.svg");
+  width: 247px;
+  height: 101px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: -195px;
+  padding: 8px 21px 15px 80px;
+  text-align: center;
 }
 .partner-advantages .adv3 {
   grid-area: 1/5/4/7;
@@ -323,12 +377,40 @@
   align-self: stretch;
   justify-self: start;
 }
+.partner-advantages .adv3:hover ~ .spoiler3 {
+  display: flex;
+}
+.partner-advantages .spoiler4 {
+  background-image: url("../img/part-adv-spoiler4.svg");
+  width: 342px;
+  height: 122px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: -240px;
+  text-align: center;
+  padding: 12px 127px 14px 9px;
+}
 .partner-advantages .adv4 {
   grid-area: 2/1/3/3;
   background-color: #E1E1E1;
   width: 290px;
   align-self: stretch;
   justify-self: end;
+}
+.partner-advantages .adv4:hover ~ .spoiler4 {
+  display: flex;
+}
+.partner-advantages .spoiler5 {
+  background-image: url("../img/part-adv-spoiler5.svg");
+  width: 350px;
+  height: 108px;
+  display: none;
+  position: absolute;
+  top: 176px;
+  left: -240px;
+  text-align: center;
+  padding: 12px 135px 16px 6px;
 }
 .partner-advantages .adv5 {
   grid-area: 3/1/4/5;
@@ -338,6 +420,20 @@
   align-self: stretch;
   justify-self: end;
 }
+.partner-advantages .adv5:hover ~ .spoiler5 {
+  display: flex;
+}
+.partner-advantages .spoiler6 {
+  background-image: url("../img/part-adv-spoiler6.svg");
+  width: 264px;
+  height: 120px;
+  display: none;
+  position: absolute;
+  top: 324px;
+  left: -240px;
+  text-align: center;
+  padding: 10px 45px 13px 9px;
+}
 .partner-advantages .adv6 {
   grid-area: 4/1/5/4;
   background-color: black;
@@ -345,11 +441,40 @@
   height: 83px;
   justify-self: stretch;
 }
+.partner-advantages .adv6:hover ~ .spoiler6 {
+  display: flex;
+}
+.partner-advantages .spoiler7 {
+  background-image: url("../img/part-adv-spoiler7.svg");
+  width: 242px;
+  height: 146px;
+  display: none;
+  position: absolute;
+  top: 147px;
+  right: -195px;
+  text-align: center;
+  padding: 9px 10px 9px 62px;
+}
 .partner-advantages .adv7 {
   grid-area: 4/4/5/7;
   background-color: #E1E1E1;
   height: 83px;
   justify-self: stretch;
+}
+.partner-advantages .adv7:hover ~ .spoiler7 {
+  display: flex;
+}
+.partner-advantages .spoiler8 {
+  background-image: url("../img/part-adv-spoiler8.svg");
+  width: 238px;
+  height: 177px;
+  display: none;
+  position: absolute;
+  top: 496px;
+  left: 20px;
+  text-align: center;
+  padding: 86px 26px 11px 26px;
+  z-index: 9;
 }
 .partner-advantages .adv8 {
   grid-area: 5/1/7/3;
@@ -359,6 +484,21 @@
   justify-self: end;
   align-self: stretch;
 }
+.partner-advantages .adv8:hover ~ .spoiler8 {
+  display: flex;
+}
+.partner-advantages .spoiler9 {
+  background-image: url("../img/part-adv-spoiler9.svg");
+  width: 258px;
+  height: 90px;
+  display: none;
+  position: absolute;
+  top: 480px;
+  left: 360px;
+  text-align: center;
+  padding: 59px 19px 18px 18px;
+  z-index: 8;
+}
 .partner-advantages .adv9 {
   grid-area: 5/3/7/5;
   height: 159px;
@@ -366,6 +506,21 @@
   background-color: #FF0009;
   align-self: flex-start;
   justify-self: stretch;
+}
+.partner-advantages .adv9:hover ~ .spoiler9 {
+  display: flex;
+}
+.partner-advantages .spoiler10 {
+  background-image: url("../img/part-adv-spoiler10.svg");
+  width: 295px;
+  height: 101px;
+  display: none;
+  position: absolute;
+  top: 344px;
+  right: -195px;
+  text-align: center;
+  padding: 8px 20px 10px 120px;
+  z-index: 8;
 }
 .partner-advantages .adv10 {
   grid-area: 5/5/6/7;
@@ -376,6 +531,21 @@
   align-self: stretch;
   justify-self: start;
 }
+.partner-advantages .adv10:hover ~ .spoiler10 {
+  display: flex;
+}
+.partner-advantages .spoiler11 {
+  background-image: url("../img/part-adv-spoiler11.svg");
+  width: 197px;
+  height: 246px;
+  display: none;
+  position: absolute;
+  top: 500px;
+  right: -20px;
+  text-align: center;
+  z-index: 8;
+  padding: 72px 20px 9px 22px;
+}
 .partner-advantages .adv11 {
   grid-area: 6/5/7/7;
   background-color: #E1E1E1;
@@ -383,6 +553,9 @@
   width: 321px;
   align-self: stretch;
   justify-self: start;
+}
+.partner-advantages .adv11:hover ~ .spoiler11 {
+  display: flex;
 }
 .partner-advantages__ligth1 {
   position: absolute;
@@ -407,11 +580,13 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 26vw;
+  max-width: 375px;
 }
 .partner-advantages__skolkovo {
   position: absolute;
   bottom: 48px;
-  right: 20%;
+  right: 25%;
   background-image: url("../img/part-adv-bg-skolkovo.svg");
   background-size: contain;
   background-repeat: no-repeat;
