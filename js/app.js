@@ -87,15 +87,42 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 0,
     adaptiveHeight: true,
+    mobileFirst: true,
     speed: 1500,
     arrows: false,
     dots: false,
     draggable: true,
     infinite: true,
     useTransform: true,
-    cssEase: 'linear',
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   });
 });
+
+//partner-partners cards slider mobile
+// $(document).ready(function () {
+//   $(".partner-partners__card-slider").slick({
+//     centerMode: true,
+//     centerPadding: "60px",
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     // infinite: true,
+//     // // adaptiveHeight: true,
+//     // // mobileFirst: true,
+//     arrows: false,
+//     draggable: true,
+//     dots: false,
+//   });
+// });
 
 // Кнопка "наверх"
 const btnUp = document.querySelector(".btn-up");
@@ -195,7 +222,7 @@ function fadeOut(element) {
 
 const burgerBtn = document.querySelector(".header__burger");
 
-burgerBtn.style.display = "none";
+// burgerBtn.style.display = "none";
 
 if (window.innerWidth <= 768) {
   burgerBtn.style.display = "block";
