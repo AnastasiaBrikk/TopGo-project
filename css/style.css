@@ -3760,7 +3760,7 @@ footer {
   }
   .team {
     min-height: 90vh;
-    max-height: 120vh;
+    max-height: 150vh;
   }
   .team__text {
     padding-bottom: 30px;
@@ -3793,6 +3793,7 @@ footer {
   }
   .team {
     padding-bottom: 25%;
+    max-height: 130vh;
   }
   .btn-up {
     bottom: 140px;
@@ -3805,6 +3806,9 @@ footer {
   }
   .news-slider .slick-arrow.slick-prev {
     left: -15px;
+  }
+  .footer__apps_title {
+    padding-left: 13px;
   }
 }
 @media (min-width: 1800px) and (max-width: 2000px) {
@@ -3837,7 +3841,7 @@ footer {
   }
   .team {
     min-height: 100vh;
-    max-height: 105vh;
+    max-height: 130vh;
   }
 }
 @media (min-width: 2000px) {
