@@ -696,6 +696,11 @@
   position: absolute;
 }
 
+#partner-map-btn {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .partner-partners {
   background-image: url("../img/part-parts-bg.jpg");
   background-position: bottom;
@@ -3260,6 +3265,7 @@ footer {
   flex-direction: column;
   gap: 18px;
   justify-content: center;
+  position: relative;
 }
 .footer__apps_title {
   font-size: 20px;
@@ -3281,6 +3287,18 @@ footer {
 }
 .footer__apps_icon:disabled {
   fill: #BDBDBD;
+}
+.footer__apps_link2:hover::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 7px 13px;
+  top: 110px;
 }
 .footer__links_sections {
   display: flex;
