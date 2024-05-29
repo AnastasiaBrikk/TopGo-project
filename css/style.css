@@ -331,10 +331,10 @@
   align-self: end;
 }
 .partner-advantages .adv1:hover ~ .spoiler1 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv1:active ~ .spoiler1 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler2 {
   background-image: url("../img/part-adv-spoiler2.svg");
@@ -356,10 +356,10 @@
   align-self: end;
 }
 .partner-advantages .adv2:hover ~ .spoiler2 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv2:active ~ .spoiler2 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler3 {
   background-image: url("../img/part-adv-spoiler3.svg");
@@ -381,10 +381,10 @@
   justify-self: start;
 }
 .partner-advantages .adv3:hover ~ .spoiler3 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv3:active ~ .spoiler3 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler4 {
   background-image: url("../img/part-adv-spoiler4.svg");
@@ -405,10 +405,10 @@
   justify-self: end;
 }
 .partner-advantages .adv4:hover ~ .spoiler4 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv4:active ~ .spoiler4 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler5 {
   background-image: url("../img/part-adv-spoiler5.svg");
@@ -429,10 +429,10 @@
   justify-self: stretch;
 }
 .partner-advantages .adv5:hover ~ .spoiler5 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv5:active ~ .spoiler5 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler6 {
   background-image: url("../img/part-adv-spoiler6.svg");
@@ -453,10 +453,10 @@
   justify-self: stretch;
 }
 .partner-advantages .adv6:hover ~ .spoiler6 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv6:active ~ .spoiler6 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler7 {
   background-image: url("../img/part-adv-spoiler7.svg");
@@ -476,10 +476,10 @@
   justify-self: stretch;
 }
 .partner-advantages .adv7:hover ~ .spoiler7 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv7:active ~ .spoiler7 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler8 {
   background-image: url("../img/part-adv-spoiler8.svg");
@@ -502,10 +502,10 @@
   align-self: stretch;
 }
 .partner-advantages .adv8:hover ~ .spoiler8 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv8:active ~ .spoiler8 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler9 {
   background-image: url("../img/part-adv-spoiler9.svg");
@@ -528,10 +528,10 @@
   justify-self: stretch;
 }
 .partner-advantages .adv9:hover ~ .spoiler9 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv9:active ~ .spoiler9 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler10 {
   background-image: url("../img/part-adv-spoiler10.svg");
@@ -555,10 +555,10 @@
   justify-self: start;
 }
 .partner-advantages .adv10:hover ~ .spoiler10 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv10:active ~ .spoiler10 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .spoiler11 {
   background-image: url("../img/part-adv-spoiler11.svg");
@@ -581,10 +581,10 @@
   justify-self: start;
 }
 .partner-advantages .adv11:hover ~ .spoiler11 {
-  display: flex;
+  display: block;
 }
 .partner-advantages .adv11:active ~ .spoiler11 {
-  display: flex;
+  display: block;
 }
 .partner-advantages__ligth1 {
   position: absolute;
@@ -2207,6 +2207,9 @@ header {
 .header__form-btn:active {
   background-color: #A70106;
   color: #BDBDBD;
+}
+.header__burger {
+  display: none;
 }
 .header__burger-close {
   display: none;
