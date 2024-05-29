@@ -4770,7 +4770,7 @@ footer {
     left: 80vw;
   }
 }
-@media (min-height: 781px) and (max-width: 768px) {
+@media (min-height: 781px) and (max-width: 767px) {
   .webp .questions {
     background-size: cover;
   }
