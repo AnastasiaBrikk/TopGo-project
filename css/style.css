@@ -286,7 +286,7 @@
   cursor: pointer;
 }
 .partner-advantages__box {
-  width: 62vw;
+  width: 880px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -428,9 +428,8 @@
   grid-area: 3/1/4/5;
   color: #fff;
   background-color: #FF0009;
-  width: 513px;
   align-self: stretch;
-  justify-self: end;
+  justify-self: stretch;
 }
 .partner-advantages .adv5:hover ~ .spoiler5 {
   display: flex;
@@ -1059,9 +1058,6 @@
   }
   .partner-advantages__box {
     width: 64vw;
-  }
-  .partner-advantages .adv5 {
-    width: 77%;
   }
   .partner-top__btn {
     font-size: 20px;
@@ -1822,7 +1818,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 316px;
-    height: 254px;
+    height: 280px;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -1836,7 +1832,7 @@
   }
   .partner-partners__card-slide {
     position: absolute;
-    width: 164px;
+    width: 182px;
     height: 100%;
     left: 0;
     right: 0;
@@ -2059,6 +2055,13 @@
     margin-bottom: 16px;
   }
 }
+.client-about__hero {
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 311px;
+}
+
 *,
 *::before,
 *::after {
@@ -2128,6 +2131,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 .header__li:hover {
   color: #FF0009;
@@ -2525,6 +2529,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .team__item {
   min-width: 18.194vw;
@@ -2554,6 +2559,79 @@ header {
   color: #fff;
   max-width: 230px;
 }
+.team__spoiler1 {
+  display: none;
+  background-image: url("../img/team-spoiler1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  width: 233px;
+  height: 93px;
+  padding: 41px 21px 16px 34px;
+  color: black;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  top: 440px;
+}
+.team__spoiler2 {
+  display: none;
+  background-image: url("../img/team-spoiler2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  width: 318px;
+  height: 93px;
+  padding: 41px 31px 16px 43px;
+  color: black;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  top: 440px;
+}
+.team__spoiler3 {
+  display: none;
+  background-image: url("../img/team-spoiler3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  width: 223px;
+  height: 93px;
+  padding: 42px 40px 16px 30px;
+  color: black;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  top: 440px;
+}
+.team__spoiler4 {
+  display: none;
+  background-image: url("../img/team-spoiler4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  width: 306px;
+  height: 93px;
+  padding: 42px 39px 16px 25px;
+  color: black;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  top: 440px;
+  right: 120px;
+}
 .team__btn {
   color: #ffffff;
   font-size: 16px;
@@ -2569,6 +2647,11 @@ header {
 .team__btn:hover {
   background-color: #FFD802;
   border: 1px solid #FFD802;
+  color: black;
+}
+.team__btn:active {
+  background-color: #e09d01;
+  border: 1px solid #e09d01;
   color: black;
 }
 .team__superhero {
@@ -2993,7 +3076,7 @@ header {
   position: absolute;
   left: 0;
   max-width: 20.416vw;
-  top: -28.56%;
+  top: -28.55%;
   height: 57.1431%;
 }
 
