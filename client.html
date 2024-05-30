@@ -19,14 +19,14 @@
                     <a href="#" class="header__link">
                         <li class="header__li">Курьерам</li>
                     </a>
-                    <a href="#" class="header__link">
-                        <li class="header__li">Бизнесу</li>
+                    <a href="partner.html" class="header__link">
+                        <li class="header__li">Партнерам</li>
                     </a>
                 </ul>
             </nav>
             <div class="header__btns">
-                <button class="header__btn">Стать клиентом</button>
-                <button class="header__btn">Войти в ЛК</button>
+                <button id="client-header-btn" class="header__btn">Стать клиентом</button>
+                <a href="https://client.topgo.group/" class="header__btn">Войти в ЛК</a>
             </div>
             <div class="partner-header__medias">
                 <a href="#" class="header__media">
@@ -105,8 +105,8 @@
         <div class="partner-top__box">
             <img class="top__main-logo" src="img/top-mainlogo.svg" alt="main logo">
             <h1 class="partner-top__heading">АВТОМАТИЗИРОВАННЫЙ
-            СЕРВИС КУРЬЕРСКОЙ ДОСТАВКИ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button class="partner-top__btn">ПОДКЛЮЧИТЬ</button>
+                СЕРВИС КУРЬЕРСКОЙ ДОСТАВКИ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button id="client-top-btn" class="partner-top__btn">ПОДКЛЮЧИТЬ</button>
         </div>
         <div class="top__tel">
             <svg class="top__tel_form-close" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -144,35 +144,241 @@
     <section class="client-about partner-about">
         <h2 class="partner-about__title">О компании Топ<span class="red">Go</span></h2>
         <p class="partner-about__text">
-            ТопGo – активно развивающийся стартап в сфере курьерской доставки. Мы представлены в 260+ городах по всей России и готовы к новым открытиям. Сотрудничаем как с крупными ритейлерами (X5 Group), ресторанами (Бургер Кинг, Вкусно и Точка), так и с различными аптеками, кафе и магазинами. ТопGo предоставляет гибкую возможность для подключения: вам не нужно менять свою систему, мы подстроимся по вас!
-Подбираем максимально подходящих под запрос курьеров, чтобы доставка была не только быстрой, но и выгодной. В сотрудничестве с клиентами и партнёрами придерживаемся принципа WIN-WIN.
+            ТопGo – активно развивающийся стартап в сфере курьерской доставки. Мы представлены в 260+ городах по всей
+            России и готовы к новым открытиям. Сотрудничаем как с крупными ритейлерами (X5 Group), ресторанами (Бургер
+            Кинг, Вкусно и Точка), так и с различными аптеками, кафе и магазинами. ТопGo предоставляет гибкую
+            возможность для подключения: вам не нужно менять свою систему, мы подстроимся по вас!
+            Подбираем максимально подходящих под запрос курьеров, чтобы доставка была не только быстрой, но и выгодной.
+            В сотрудничестве с клиентами и партнёрами придерживаемся принципа WIN-WIN.
         </p>
 
         <img class="partner-about__el2" src="img/partner-about-el2.svg">
         <img class="client-about__hero" src="img/client-about-hero.svg">
     </section>
 
-    
+    <section class="client-cards">
+        <h2 class="client-cards__title">Топ<span class="red">Go</span>&nbsp;это:</h2>
 
-    <section class="partner-form">
+        <img class="client-cards__light1" src="img/client-lightning1.svg">
+        <img class="client-cards__light2" src="img/client-lightning2.svg">
+
+        <div class="client-cards__box">
+            <div id="client-card1" class="client-cards__card">
+                <div class="client-cards__card_face client-cards__card_face--front">
+                    <img src="img/client-card1.svg" alt="260 городов">
+                    <p class="client-cards__card_text2">городов<br>по всей России</p>
+                </div>
+
+                <div class="client-cards__card_face client-cards__card_face--back">
+                    <p>Санкт-Петербург <br>
+                        Москва <br>
+                        Казань <br>
+                        Архангельск <br>
+                        и не только! <br>
+                        <br>
+                        А там, где нас нет - скоро откроемся:)
+                    </p>
+                </div>
+            </div>
+
+            <div id="client-card2" class="client-cards__card">
+                <div class="client-cards__card_face client-cards__card_face--front">
+                    <img src="img/client-card2.svg">
+                    <p class="client-cards__card_text1">20 000+</p>
+                    <p class="client-cards__card_text2">курьеров-<br>супергероев</p>
+                </div>
+                <div class="client-cards__card_face client-cards__card_face--back">
+                    <p class="client-cards__card_face--back_text2">
+                        Лояльная база исполнителей:<br>
+                        <br>
+                        13 000+ автокурьеров<br>
+                        5 000+ велокурьеров<br>
+                        2 000+ пеших<br>
+                        <br>
+                        2500+ ежеденевно<br>
+                        на линии и их количество только растёт!
+                    </p>
+                </div>
+            </div>
+
+            <div id="client-card3" class="client-cards__card">
+                <div class="client-cards__card_face client-cards__card_face--front">
+                    <img src="img/client-card3.svg">
+                    <p class="client-cards__card_text1">10 000+</p>
+                    <p class="client-cards__card_text2">точек<br>обслуживания</p>
+                </div>
+
+                <div class="client-cards__card_face client-cards__card_face--back">
+                    <p class="client-cards__card_face--back_text3">
+                        Мы работаем с:<br>
+                        <br>
+                        - продуктовыми ритейлерами<br>
+                        - аптеками<br>
+                        -ресторанами и кафе<br>
+                        -зоомагазинами<br>
+                        -магазинами электроники<br>
+                        -почтовыми отделениями<br>
+                        <br>
+                        И открыты к интеграции
+                        в другие ниши!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <p class="partner-advantages__skolkovo">А еще, мы резидент Skolkovo!</p>
+        <img class="partner-advantages__superhero" src="img/tablet-part-adv-hero.svg">
+    </section>
+
+    <section class="client-connection">
+        <h2 class="client-connection__title">Варианты подключения</h2>
+
+        <div class="client-connection__box">
+            <button onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
+                id="connection1" class="client-connection__btn">API</button>
+            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1">Прямая интеграция. Автоматическая
+                отправка в доставку и обмен статусами
+                и другими изменениями в заказе</div>
+
+            <button onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
+                id="connection2" class="client-connection__btn">Личный<br>кабинет</button>
+            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2">Создание заказов вручную
+                и отслеживание каждого действующего, а также своей истории</div>
+
+            <button onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
+                id="connection3" class="client-connection__btn">liko</button>
+            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3">Заказывайте доставку через кассу
+                ресторана. Модуль для кассовой система автоматизации ресторанов легко установить и просто использовать
+            </div>
+
+            <button onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
+                id="connection4" class="client-connection__btn">Ритейл CRM</button>
+            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4">В своей CRM передаете заказ в доставку,
+                а мы забираем его по прямому подключению</div>
+        </div>
+
+        <h2 class="client-connection__title2">Уже стали нашими клиентами</h2>
+
+        <div class="partner-partners__slider">
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/X5.svg" alt="X5">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/vkusvill.svg" alt="vkusvill">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/БургерКинг.svg" alt="БургерКинг">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Окей.svg" alt="Окей">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/BrosBurritos.svg" alt="BrosBurritos">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Ikigai.svg" alt="Ikigai">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Nigde.svg" alt="Nigde">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Бирвайн.svg" alt="Бирвайн">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ВкусноиТочка.svg" alt="Вкусно и Точка">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Кукуруза.svg" alt="Кукуруза">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ЛюбимСытно.svg" alt="ЛюбимСытно">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/МосАптека.svg" alt="МосАптека">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Озерки.svg" alt="Озерки">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ПхалиХинкали.svg" alt="ПхалиХинкали">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/Столетов.svg" alt="Столетов">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ХачоиПури.svg" alt="Хачо и Пури">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ХорошаяАптека.svg" alt="Хорошая Аптека">
+            </div>
+            <div class="partner-partners__slide">
+                <img src="img/partners-icons/ЭркаФарм.svg" alt="ЭркаФарм">
+            </div>
+        </div>
+
+        <img class="client-connection__el" src="img/client-conn-el.svg">
+        <img class="client-connection__hero" src="img/client-conn-hero.svg">
+    </section>
+
+    <section class="partner-questions">
+        <div class="partner-questions__title-bg">
+            <img src="img/ques-bg-title.svg">
+            <span class="partner-questions__title partner-questions__title_qt1">Вопрос</span><span
+                class="partner-questions__title partner-questions__title_qt2">Ответ</span>
+        </div>
+
+        <div class="partner-questions__dialog">
+            <img class="partner-questions__smile" src="img/part-q-smile.svg">
+            <img class="partner-questions__hero" src="img/part-q-hero.svg">
+
+            <div class="partner-questions__phrase1 partner-questions__phrase">
+                <p class="partner-questions__text">Что такое 
+                    сервис доставки ТопGo?</p>
+            </div>
+            <div class="partner-questions__phrase2 partner-questions__phrase" style="width: 382px; height: 156px;">
+                <p class="partner-questions__text" style="width: 250px;">Это сервис для бизнеса, который, как и его курьеры-супергерои, всегда спешит на помощь!
+                </p>
+            </div>
+            <div class="partner-questions__phrase3 partner-questions__phrase">
+                <p class="partner-questions__text" style="width: 175px;">Кому подойдет
+                    доставка с ТопGo?</p>
+            </div>
+            <div class="partner-questions__phrase4 partner-questions__phrase" style="width: 441px; height: 124px;">
+                <p class="partner-questions__text">Наш сервис подойдет любому бизнесу, который осуществляет Интернет-торговлю, будь то маленький магазинчик или крупная федеральная сеть!</p>
+            </div>
+            <div class="partner-questions__phrase5 partner-questions__phrase">
+                <p class="partner-questions__text">Как можно подключить услуги доставки?</p>
+            </div>
+            <div class="partner-questions__phrase6 partner-questions__phrase">
+                <p class="partner-questions__text">Вам достаточно оставить заявку! Мы с вами свяжемся, подробно все объясним и подберем для вас оптимальный вариант подключения!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner-form client_form">
         <div class="form__title-box">
             <h2 class="form__title">Остались <span class="red">вопросы</span>?</h2>
         </div>
         <p class="form__text">Заполни форму, и&nbsp;мы&nbsp;с&nbsp;тобой свяжемся в&nbsp;рабочее время!</p>
-        <form class="partner-form__form">
-            <input class="partner-form__input" type="text" required placeholder="Имя Фамилия">
-            <input class="partner-form__input" type="tel" required placeholder="Номер телефона">
-            <input class="partner-form__input" type="text" placeholder="ИНН">
-            <input class="partner-form__input" type="number" placeholder="Действующий штат курьеров">
-            <input class="partner-form__input" type="text" placeholder="Название парка">
-            <textarea class="partner-form__input" id="comment" name="comment" rows="2" cols="33"
-                placeholder="Комментарий/Вопрос"></textarea>
-            <p class="partner-form__info">Нажимая на кнопку, вы подтверждаете, что ознакомились с <a href="#"
+        <form class="partner-form__form client-form">
+            <input class="partner-form__input client-form__input1" type="text" required placeholder="Имя Фамилия">
+            <input class="partner-form__input client-form__input2" type="tel" required placeholder="Номер телефона">
+            <input class="partner-form__input client-form__input3" type="text" placeholder="Почта (по желанию)">
+            <input class="partner-form__input client-form__input4" type="text" required placeholder="Название компании/бренда">
+            <input class="partner-form__input client-form__input5" type="text" required placeholder="Что планируется доставлять">
+            <input class="partner-form__input client-form__input6" type="text" required placeholder="Среднее кол-во доставок в день">
+            <input class="partner-form__input client-form__input7" type="text" required placeholder="ИНН">
+            <input class="partner-form__input client-form__input8" type="number" required placeholder="Кол-во городов присутствия">
+            <textarea class="partner-form__input client-form__input9" id="comment" name="comment" rows="2" cols="33"
+                placeholder="Комментарий/Вопрос(по желанию)"></textarea>
+            <p class="partner-form__info client-form__input10">Нажимая на кнопку, вы подтверждаете, что ознакомились с <a href="#"
                     class="form__info-link">политикой конфиденциальности</a> и даете согласие на обработку своих
                 персональных данных</p>
-            <button class="form__btn">Отправить</button>
+            <button class="form__btn client-form__input11">Отправить</button>
         </form>
-        <img src="img/form-moto.png" class="form__motohero">
+        <img src="img/form-moto.png" class="form__motohero" style="left: 0;">
         <img src="img/btn-up.svg" alt="Наверх" class="btn-up btn-up_hide">
     </section>
 
@@ -295,7 +501,18 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+
     <script src="js/app.min.js"></script>
+
+    <script>
+        function showSpoiler(el) {
+            document.querySelector(`#${el}`).style.display = 'block';
+        }
+
+        function hideSpoiler(el) {
+            document.querySelector(`#${el}`).style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
