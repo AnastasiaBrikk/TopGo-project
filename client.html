@@ -165,7 +165,7 @@
         <div class="client-cards__box">
             <div id="client-card1" class="client-cards__card">
                 <div class="client-cards__card_face client-cards__card_face--front">
-                    <img src="img/client-card1.svg" alt="260 городов">
+                    <img class="client-cards__icon1" src="img/client-card1.svg" alt="260 городов">
                     <p class="client-cards__card_text2">городов<br>по всей России</p>
                 </div>
 
@@ -183,7 +183,7 @@
 
             <div id="client-card2" class="client-cards__card">
                 <div class="client-cards__card_face client-cards__card_face--front">
-                    <img src="img/client-card2.svg">
+                    <img class="client-cards__icon2" src="img/client-card2.svg">
                     <p class="client-cards__card_text1">20 000+</p>
                     <p class="client-cards__card_text2">курьеров-<br>супергероев</p>
                 </div>
@@ -203,7 +203,7 @@
 
             <div id="client-card3" class="client-cards__card">
                 <div class="client-cards__card_face client-cards__card_face--front">
-                    <img src="img/client-card3.svg">
+                    <img class="client-cards__icon3" src="img/client-card3.svg">
                     <p class="client-cards__card_text1">10 000+</p>
                     <p class="client-cards__card_text2">точек<br>обслуживания</p>
                 </div>
@@ -235,26 +235,26 @@
         <h2 class="client-connection__title">Варианты подключения</h2>
 
         <div class="client-connection__box">
-            <button onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
+            <button onclick="showSpoilerClick('connectionSpoiler1', 'client-connection__btn-spoiler')" onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
                 id="connection1" class="client-connection__btn">API</button>
-            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1">Прямая интеграция. Автоматическая
+            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1 client-connection__btn-spoiler">Прямая интеграция. Автоматическая
                 отправка в доставку и обмен статусами
                 и другими изменениями в заказе</div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
+            <button onclick="showSpoilerClick('connectionSpoiler2', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
                 id="connection2" class="client-connection__btn">Личный<br>кабинет</button>
-            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2">Создание заказов вручную
+            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2 client-connection__btn-spoiler">Создание заказов вручную
                 и отслеживание каждого действующего, а также своей истории</div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
+            <button onclick="showSpoilerClick('connectionSpoiler3', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
                 id="connection3" class="client-connection__btn">liko</button>
-            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3">Заказывайте доставку через кассу
+            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3 client-connection__btn-spoiler">Заказывайте доставку через кассу
                 ресторана. Модуль для кассовой система автоматизации ресторанов легко установить и просто использовать
             </div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
+            <button onclick="showSpoilerClick('connectionSpoiler4', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
                 id="connection4" class="client-connection__btn">Ритейл CRM</button>
-            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4">В своей CRM передаете заказ в доставку,
+            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4 client-connection__btn-spoiler">В своей CRM передаете заказ в доставку,
                 а мы забираем его по прямому подключению</div>
         </div>
 
@@ -332,26 +332,26 @@
             <img class="partner-questions__smile" src="img/part-q-smile.svg">
             <img class="partner-questions__hero" src="img/part-q-hero.svg">
 
-            <div class="partner-questions__phrase1 partner-questions__phrase">
-                <p class="partner-questions__text">Что такое 
+            <div class="client-q-phrase1">
+                <p class="client-q__text">Что такое 
                     сервис доставки ТопGo?</p>
             </div>
-            <div class="partner-questions__phrase2 partner-questions__phrase" style="width: 382px; height: 156px;">
-                <p class="partner-questions__text" style="width: 250px;">Это сервис для бизнеса, который, как и его курьеры-супергерои, всегда спешит на помощь!
+            <div class="client-q-phrase2">
+                <p class="client-q__text">Это сервис для бизнеса, который, как и его курьеры-супергерои, всегда спешит на помощь!
                 </p>
             </div>
-            <div class="partner-questions__phrase3 partner-questions__phrase">
-                <p class="partner-questions__text" style="width: 175px;">Кому подойдет
+            <div class="client-q-phrase3">
+                <p class="client-q__text">Кому подойдет
                     доставка с ТопGo?</p>
             </div>
-            <div class="partner-questions__phrase4 partner-questions__phrase" style="width: 441px; height: 124px;">
-                <p class="partner-questions__text">Наш сервис подойдет любому бизнесу, который осуществляет Интернет-торговлю, будь то маленький магазинчик или крупная федеральная сеть!</p>
+            <div class="client-q-phrase4">
+                <p class="client-q__text">Наш сервис подойдет любому бизнесу, который осуществляет Интернет-торговлю, будь то маленький магазинчик или крупная федеральная сеть!</p>
             </div>
-            <div class="partner-questions__phrase5 partner-questions__phrase">
-                <p class="partner-questions__text">Как можно подключить услуги доставки?</p>
+            <div class="client-q-phrase5">
+                <p class="client-q__text">Как можно подключить услуги доставки?</p>
             </div>
-            <div class="partner-questions__phrase6 partner-questions__phrase">
-                <p class="partner-questions__text">Вам достаточно оставить заявку! Мы с вами свяжемся, подробно все объясним и подберем для вас оптимальный вариант подключения!
+            <div class="client-q-phrase6">
+                <p class="client-q__text">Вам достаточно оставить заявку! Мы с вами свяжемся, подробно все объясним и подберем для вас оптимальный вариант подключения!
                 </p>
             </div>
         </div>
@@ -378,7 +378,7 @@
                 персональных данных</p>
             <button class="form__btn client-form__input11">Отправить</button>
         </form>
-        <img src="img/form-moto.png" class="form__motohero" style="left: 0;">
+        <img src="img/form-moto.png" class="form__motohero client-form__motohero" >
         <img src="img/btn-up.svg" alt="Наверх" class="btn-up btn-up_hide">
     </section>
 
@@ -511,6 +511,13 @@
 
         function hideSpoiler(el) {
             document.querySelector(`#${el}`).style.display = 'none';
+        }
+
+        function showSpoilerClick(el, array) {
+            docement.querySelectorAll(`#${array}`).forEach(element => {
+                element.style.display = "none";
+            });
+            document.querySelector(`#${el}`).style.display = "block";
         }
     </script>
 </body>
