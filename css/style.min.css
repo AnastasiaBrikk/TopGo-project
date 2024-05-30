@@ -1049,6 +1049,7 @@
   }
   .partner-top {
     max-height: 1100px;
+    background-image: url("../img/big-desktop-bg-top.jpg");
   }
   .partner-map__map {
     width: 60vw;
@@ -2068,7 +2069,7 @@
 
 .client-about__hero {
   position: absolute;
-  right: -1px;
+  right: 0;
   bottom: 0;
   width: 311px;
 }
@@ -2369,6 +2370,121 @@
   bottom: 5px;
 }
 
+.client-q-phrase1 {
+  background-image: url("../img/client-phrase1.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 281px;
+  height: 151px;
+  padding: 37px 30px 78px 50px;
+  top: 0;
+  left: 20px;
+}
+.client-q-phrase1 p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.client-q-phrase2 {
+  background-image: url("../img/client-phrase2.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 382px;
+  height: 136px;
+  padding: 41px 105px 51px 54px;
+  top: 15px;
+  right: 15px;
+}
+.client-q-phrase2 p {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.client-q-phrase3 {
+  background-image: url("../img/client-phrase3.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 288px;
+  height: 89px;
+  padding: 30px 61px 34px 75px;
+  top: 160px;
+  left: 25px;
+}
+.client-q-phrase3 p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.client-q-phrase4 {
+  background-image: url("../img/client-phrase4.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 445px;
+  height: 128px;
+  padding: 33px 111px 46px 57px;
+  top: 190px;
+  right: 20px;
+}
+.client-q-phrase4 p {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.client-q-phrase5 {
+  background-image: url("../img/client-phrase5.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 278px;
+  height: 106px;
+  padding: 23px 37px 29px 80px;
+  top: 300px;
+  left: 15px;
+}
+.client-q-phrase5 p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.client-q-phrase6 {
+  background-image: url("../img/client-phrase6.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  width: 409px;
+  height: 141px;
+  padding: 40px 81px 52px 29px;
+  top: 340px;
+  right: 25px;
+}
+.client-q-phrase6 p {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
 .client-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2543,29 +2659,17 @@
   }
   .client-q-phrase1 {
     background-image: url("../img/client-q-phrase1.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 180.5px;
     height: 90px;
     padding: 17px 28px 36px 51px;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 0;
     left: 48px;
   }
   .client-q-phrase2 {
     background-image: url("../img/client-q-phrase2.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 239px;
     height: 85px;
     padding: 19px 65px 23px 33px;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 8px;
     right: 0;
   }
@@ -2575,18 +2679,12 @@
   }
   .client-q-phrase3 {
     background-image: url("../img/client-q-phrase3.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 177px;
     height: 58px;
     padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 100px;
     left: 24px;
   }
@@ -2595,15 +2693,9 @@
   }
   .client-q-phrase4 {
     background-image: url("../img/client-q-phrase4.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 291px;
     height: 90px;
     padding: 15px 74px 20px 36px;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 115px;
     right: 10px;
   }
@@ -2613,29 +2705,17 @@
   }
   .client-q-phrase5 {
     background-image: url("../img/client-q-phrase5.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 187px;
     height: 66px;
     padding: 12px 20px 15px 60px;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 185px;
     left: 0;
   }
   .client-q-phrase6 {
     background-image: url("../img/client-q-phrase6.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 285px;
     height: 98px;
     padding: 30px 65px 35px 25px;
-    text-align: center;
-    position: absolute;
-    z-index: 5;
     top: 213px;
     right: 13px;
   }
@@ -3781,7 +3861,7 @@ header {
 .form__motohero {
   position: absolute;
   bottom: -1px;
-  left: 3.5416vw;
+  left: 0;
   max-width: 28.125vw;
   height: auto;
 }
@@ -4455,6 +4535,26 @@ footer {
     padding-left: 75px;
     padding-right: 75px;
   }
+  .top {
+    background-position: bottom;
+    background-size: 100vw;
+    height: 89vh;
+    padding-top: 50px;
+  }
+  .top__btns {
+    margin-bottom: 29vh;
+  }
+  .top__box {
+    gap: 20px;
+  }
+  .top__heading {
+    font-size: 26px;
+  }
+  .top__btn {
+    min-width: 180px;
+    height: 50px;
+    font-size: 20px;
+  }
   .top__skolkovo-icon {
     right: 80px;
   }
@@ -4623,6 +4723,26 @@ footer {
     bottom: 130px;
     width: 5vw;
   }
+  .top {
+    padding-top: 70px;
+    height: 89vh;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .top__btns {
+    margin-bottom: 32vh;
+  }
+  .top__box {
+    gap: 20px;
+  }
+  .top__heading {
+    font-size: 30px;
+  }
+  .top__btn {
+    min-width: 200px;
+    height: 60px;
+    font-size: 22px;
+  }
   .top__tel {
     width: 5vw;
   }
@@ -4678,6 +4798,17 @@ footer {
   }
 }
 @media (min-width: 1600px) and (max-width: 1800px) {
+  .top__box {
+    gap: 30px;
+  }
+  .top__heading {
+    font-size: 30px;
+  }
+  .top__btn {
+    min-width: 200px;
+    height: 60px;
+    font-size: 22px;
+  }
   .questions {
     min-height: 70vh;
     height: 76vh;
@@ -4723,6 +4854,18 @@ footer {
   .top {
     height: 89vh;
     max-height: 925px;
+    padding-top: 100px;
+  }
+  .top__box {
+    gap: 40px;
+  }
+  .top__heading {
+    font-size: 32px;
+  }
+  .top__btn {
+    min-width: 250px;
+    height: 70px;
+    font-size: 24px;
   }
   .questions {
     min-height: 70vh;
@@ -4774,6 +4917,22 @@ footer {
   }
   .header {
     justify-content: space-around;
+  }
+  .top {
+    background-image: url("../img/big-desktop-bg-maintop.jpg");
+    height: 1000px;
+    padding-top: 115px;
+  }
+  .top__box {
+    gap: 50px;
+  }
+  .top__heading {
+    font-size: 36px;
+  }
+  .top__btn {
+    min-width: 300px;
+    height: 85px;
+    font-size: 25px;
   }
   .about {
     height: auto;
@@ -5412,7 +5571,8 @@ footer {
   .questions {
     height: 680px;
   }
-  .top, .partner-top {
+  .top,
+  .partner-top {
     background-image: url("../img/mobile-long-bg-top.jpg");
     height: 100vh;
   }
@@ -5422,7 +5582,8 @@ footer {
   .top__main-logo {
     width: 185px;
   }
-  .top__btn, .partner-top__btn {
+  .top__btn,
+  .partner-top__btn {
     font-size: 16px;
     width: 180px;
     height: 60px;
@@ -5437,7 +5598,8 @@ footer {
   .about__text {
     font-size: 17px;
   }
-  .top__box, .partner-top__box {
+  .top__box,
+  .partner-top__box {
     padding-top: 35px;
     gap: 14px;
   }
