@@ -67,9 +67,9 @@
                 </a>
             </div>
             <div class="header__burger-menu">
-                <a id="menu-news" class="header__burger-menu_link">Главная</a>
-                <a id="menu-team" class="header__burger-menu_link">Курьерам</a>
-                <a href="#" class="header__burger-menu_link">Партнерам</a>
+                <a href="index.html" id="menu-news" class="header__burger-menu_link">Главная</a>
+                <a href="#" id="menu-team" class="header__burger-menu_link">Курьерам</a>
+                <a href="partner.html" class="header__burger-menu_link">Партнерам</a>
             </div>
             <svg class="header__burger" width="34" height="30" viewBox="0 0 34 30" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -162,14 +162,14 @@
         <img class="client-cards__light2" src="img/client-lightning2.svg">
 
         <div class="client-cards__box">
-            <div id="client-card1" class="client-cards__card">
-                <div class="client-cards__card_face client-cards__card_face--front">
+            <div onclick="showCardClick('client-card1-back', 'client-cards__card_face--back', 'client-card1-front', 'client-cards__card_face--front')" id="client-card1" class="client-cards__card">
+                <div id="client-card1-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon1" src="img/client-card1.svg" alt="260 городов">
                     <p class="client-cards__card_text2">городов<br>по всей России</p>
                 </div>
 
-                <div class="client-cards__card_face client-cards__card_face--back">
-                    <p>Санкт-Петербург <br>
+                <div id="client-card1-back" class="client-cards__card_face client-cards__card_face--back">
+                    <p class="client-cards__card_face--back_text1">Санкт-Петербург <br>
                         Москва <br>
                         Казань <br>
                         Архангельск <br>
@@ -180,13 +180,13 @@
                 </div>
             </div>
 
-            <div id="client-card2" class="client-cards__card">
-                <div class="client-cards__card_face client-cards__card_face--front">
+            <div onclick="showCardClick('client-card2-back', 'client-cards__card_face--back', 'client-card2-front', 'client-cards__card_face--front')" id="client-card2" class="client-cards__card">
+                <div id="client-card2-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon2" src="img/client-card2.svg">
                     <p class="client-cards__card_text1">20 000+</p>
                     <p class="client-cards__card_text2">курьеров-<br>супергероев</p>
                 </div>
-                <div class="client-cards__card_face client-cards__card_face--back">
+                <div id="client-card2-back" class="client-cards__card_face client-cards__card_face--back">
                     <p class="client-cards__card_face--back_text2">
                         Лояльная база исполнителей:<br>
                         <br>
@@ -200,14 +200,14 @@
                 </div>
             </div>
 
-            <div id="client-card3" class="client-cards__card">
-                <div class="client-cards__card_face client-cards__card_face--front">
+            <div onclick="showCardClick('client-card3-back', 'client-cards__card_face--back', 'client-card3-front', 'client-cards__card_face--front')" id="client-card3" class="client-cards__card">
+                <div id="client-card3-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon3" src="img/client-card3.svg">
                     <p class="client-cards__card_text1">10 000+</p>
                     <p class="client-cards__card_text2">точек<br>обслуживания</p>
                 </div>
 
-                <div class="client-cards__card_face client-cards__card_face--back">
+                <div id="client-card3-back"  class="client-cards__card_face client-cards__card_face--back">
                     <p class="client-cards__card_face--back_text3">
                         Мы работаем с:<br>
                         <br>
@@ -320,12 +320,8 @@
         <img class="client-connection__hero" src="img/client-conn-hero.svg">
     </section>
 
-    <section class="partner-questions">
-        <div class="partner-questions__title-bg">
-            <img src="img/ques-bg-title.svg">
-            <span class="partner-questions__title partner-questions__title_qt1">Вопрос</span><span
-                class="partner-questions__title partner-questions__title_qt2">Ответ</span>
-        </div>
+    <section class="partner-questions client-q">
+        <img class="questions__title" src="img/q-title.svg" alt="Вопрос Ответ">
 
         <div class="partner-questions__dialog">
             <img class="partner-questions__smile" src="img/part-q-smile.svg">
@@ -517,6 +513,17 @@
                 element.style.display = "none";
             });
             document.querySelector(`#${el}`).style.display = "block";
+        }
+
+        function showCardClick(elToShow, arrayToHide, elToHide, arrayToShow) {
+            docement.querySelectorAll(`.${arrayToHide}`).forEach(element => {
+                element.style.display = "none";
+            });
+            docement.querySelectorAll(`.${arrayToShow}`).forEach(element => {
+                element.style.display = "block";
+            });
+            document.querySelector(`#${elToHide}`).style.display = 'none';
+            document.querySelector(`#${elToShow}`).style.display = "block";
         }
     </script>
 </body>
