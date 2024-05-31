@@ -162,7 +162,7 @@
         <img class="client-cards__light2" src="img/client-lightning2.svg">
 
         <div class="client-cards__box">
-            <div onclick="showCardClick('client-card1-back', 'client-cards__card_face--back', 'client-card1-front', 'client-cards__card_face--front')" id="client-card1" class="client-cards__card">
+            <div id="client-card1" class="client-cards__card">
                 <div id="client-card1-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon1" src="img/client-card1.svg" alt="260 городов">
                     <p class="client-cards__card_text2">городов<br>по всей России</p>
@@ -180,7 +180,7 @@
                 </div>
             </div>
 
-            <div onclick="showCardClick('client-card2-back', 'client-cards__card_face--back', 'client-card2-front', 'client-cards__card_face--front')" id="client-card2" class="client-cards__card">
+            <div id="client-card2" class="client-cards__card">
                 <div id="client-card2-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon2" src="img/client-card2.svg">
                     <p class="client-cards__card_text1">20 000+</p>
@@ -200,14 +200,14 @@
                 </div>
             </div>
 
-            <div onclick="showCardClick('client-card3-back', 'client-cards__card_face--back', 'client-card3-front', 'client-cards__card_face--front')" id="client-card3" class="client-cards__card">
+            <div id="client-card3" class="client-cards__card">
                 <div id="client-card3-front" class="client-cards__card_face client-cards__card_face--front">
                     <img class="client-cards__icon3" src="img/client-card3.svg">
                     <p class="client-cards__card_text1">10 000+</p>
                     <p class="client-cards__card_text2">точек<br>обслуживания</p>
                 </div>
 
-                <div id="client-card3-back"  class="client-cards__card_face client-cards__card_face--back">
+                <div id="client-card3-back" class="client-cards__card_face client-cards__card_face--back">
                     <p class="client-cards__card_face--back_text3">
                         Мы работаем с:<br>
                         <br>
@@ -234,26 +234,30 @@
         <h2 class="client-connection__title">Варианты подключения</h2>
 
         <div class="client-connection__box">
-            <button onclick="showSpoilerClick('connectionSpoiler1', 'client-connection__btn-spoiler')" onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
+            <button onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
                 id="connection1" class="client-connection__btn">API</button>
-            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1 client-connection__btn-spoiler">Прямая интеграция. Автоматическая
+            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1 client-connection__btn-spoiler">Прямая
+                интеграция. Автоматическая
                 отправка в доставку и обмен статусами
                 и другими изменениями в заказе</div>
 
-            <button onclick="showSpoilerClick('connectionSpoiler2', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
+            <button onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
                 id="connection2" class="client-connection__btn">Личный<br>кабинет</button>
-            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2 client-connection__btn-spoiler">Создание заказов вручную
+            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2 client-connection__btn-spoiler">Создание
+                заказов вручную
                 и отслеживание каждого действующего, а также своей истории</div>
 
-            <button onclick="showSpoilerClick('connectionSpoiler3', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
+            <button onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
                 id="connection3" class="client-connection__btn">liko</button>
-            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3 client-connection__btn-spoiler">Заказывайте доставку через кассу
+            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3 client-connection__btn-spoiler">
+                Заказывайте доставку через кассу
                 ресторана. Модуль для кассовой система автоматизации ресторанов легко установить и просто использовать
             </div>
 
-            <button onclick="showSpoilerClick('connectionSpoiler4', 'client-connection__btn-spoiler')"  onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
+            <button onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
                 id="connection4" class="client-connection__btn">Ритейл CRM</button>
-            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4 client-connection__btn-spoiler">В своей CRM передаете заказ в доставку,
+            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4 client-connection__btn-spoiler">В своей
+                CRM передаете заказ в доставку,
                 а мы забираем его по прямому подключению</div>
         </div>
 
@@ -328,11 +332,12 @@
             <img class="partner-questions__hero" src="img/part-q-hero.svg">
 
             <div class="client-q-phrase1">
-                <p class="client-q__text">Что такое 
+                <p class="client-q__text">Что такое
                     сервис доставки ТопGo?</p>
             </div>
             <div class="client-q-phrase2">
-                <p class="client-q__text">Это сервис для бизнеса, который, как и его курьеры-супергерои, всегда спешит на помощь!
+                <p class="client-q__text">Это сервис для бизнеса, который, как и его курьеры-супергерои, всегда спешит
+                    на помощь!
                 </p>
             </div>
             <div class="client-q-phrase3">
@@ -340,13 +345,15 @@
                     доставка с ТопGo?</p>
             </div>
             <div class="client-q-phrase4">
-                <p class="client-q__text">Наш сервис подойдет любому бизнесу, который осуществляет Интернет-торговлю, будь то маленький магазинчик или крупная федеральная сеть!</p>
+                <p class="client-q__text">Наш сервис подойдет любому бизнесу, который осуществляет Интернет-торговлю,
+                    будь то маленький магазинчик или крупная федеральная сеть!</p>
             </div>
             <div class="client-q-phrase5">
                 <p class="client-q__text">Как можно подключить услуги доставки?</p>
             </div>
             <div class="client-q-phrase6">
-                <p class="client-q__text">Вам достаточно оставить заявку! Мы с вами свяжемся, подробно все объясним и подберем для вас оптимальный вариант подключения!
+                <p class="client-q__text">Вам достаточно оставить заявку! Мы с вами свяжемся, подробно все объясним и
+                    подберем для вас оптимальный вариант подключения!
                 </p>
             </div>
         </div>
@@ -361,19 +368,24 @@
             <input class="partner-form__input client-form__input1" type="text" required placeholder="Имя Фамилия">
             <input class="partner-form__input client-form__input2" type="tel" required placeholder="Номер телефона">
             <input class="partner-form__input client-form__input3" type="text" placeholder="Почта (по желанию)">
-            <input class="partner-form__input client-form__input4" type="text" required placeholder="Название компании/бренда">
-            <input class="partner-form__input client-form__input5" type="text" required placeholder="Что планируется доставлять">
-            <input class="partner-form__input client-form__input6" type="text" required placeholder="Среднее кол-во доставок в день">
+            <input class="partner-form__input client-form__input4" type="text" required
+                placeholder="Название компании/бренда">
+            <input class="partner-form__input client-form__input5" type="text" required
+                placeholder="Что планируется доставлять">
+            <input class="partner-form__input client-form__input6" type="text" required
+                placeholder="Среднее кол-во доставок в день">
             <input class="partner-form__input client-form__input7" type="text" required placeholder="ИНН">
-            <input class="partner-form__input client-form__input8" type="number" required placeholder="Кол-во городов присутствия">
+            <input class="partner-form__input client-form__input8" type="number" required
+                placeholder="Кол-во городов присутствия">
             <textarea class="partner-form__input client-form__input9" id="comment" name="comment" rows="2" cols="33"
                 placeholder="Комментарий/Вопрос(по желанию)"></textarea>
-            <p class="partner-form__info client-form__input10">Нажимая на кнопку, вы подтверждаете, что ознакомились с <a href="#"
-                    class="form__info-link">политикой конфиденциальности</a> и даете согласие на обработку своих
-                персональных данных</p>
+            <p class="partner-form__info client-form__input10">Нажимая на кнопку, вы подтверждаете, что ознакомились с
+                <a href="#" class="form__info-link">политикой конфиденциальности</a> и даете согласие на обработку своих
+                персональных данных
+            </p>
             <button class="form__btn client-form__input11">Отправить</button>
         </form>
-        <img src="img/form-moto.png" class="form__motohero client-form__motohero" >
+        <img src="img/form-moto.png" class="form__motohero client-form__motohero">
         <img src="img/btn-up.svg" alt="Наверх" class="btn-up btn-up_hide">
     </section>
 
@@ -498,7 +510,6 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script src="js/app.min.js"></script>
-
     <script>
         function showSpoiler(el) {
             document.querySelector(`#${el}`).style.display = 'block';
@@ -515,15 +526,19 @@
             document.querySelector(`#${el}`).style.display = "block";
         }
 
-        function showCardClick(elToShow, arrayToHide, elToHide, arrayToShow) {
-            docement.querySelectorAll(`.${arrayToHide}`).forEach(element => {
-                element.style.display = "none";
+        if (window.innerWidth < 1024) {
+            window.addEventListener('scroll', function () {
+                // Check the location of each desired element
+                document.querySelectorAll('.client-connection__btn-spoiler').forEach(function (element) {
+                    var bottomOfObject = element.offsetTop + element.offsetHeight;
+                    var bottomOfWindow = window.scrollY + window.innerHeight;
+
+                    if (bottomOfWindow > bottomOfObject) {
+                        element.style.opacity = '1';
+                        element.style.transition = 'opacity 0.5s';
+                    }
+                });
             });
-            docement.querySelectorAll(`.${arrayToShow}`).forEach(element => {
-                element.style.display = "block";
-            });
-            document.querySelector(`#${elToHide}`).style.display = 'none';
-            document.querySelector(`#${elToShow}`).style.display = "block";
         }
     </script>
 </body>
