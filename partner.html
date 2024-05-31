@@ -187,11 +187,13 @@
                 всех необходимых документов, консультация по юридическим вопросам и т.д.</div>
 
             <div class="partner-advantages__adv adv7">Внутренний трафик</div>
-            <div class="partner-advantages__adv-spoiler spoiler7">Трафик кандидатов, которые уже зарегистрированы в нашей
+            <div class="partner-advantages__adv-spoiler spoiler7">Трафик кандидатов, которые уже зарегистрированы в
+                нашей
                 системе. Вам остается только вывести их в работу, без затрат на рекламу и размещение:)</div>
 
             <div class="partner-advantages__adv adv8">Реферальные программы</div>
-            <div class="partner-advantages__adv-spoiler spoiler8">Различные вариации дополнительных бонусов для партнеров
+            <div class="partner-advantages__adv-spoiler spoiler8">Различные вариации дополнительных бонусов для
+                партнеров
                 на протяжении всего сотрудничества</div>
 
             <div class="partner-advantages__adv adv9">Топливная программа</div>
@@ -322,7 +324,7 @@
 
     <section class="partner-questions">
         <img class="partner-questions__el5" src="img/part-q-el5.svg">
-            <img class="questions__title" src="img/q-title.svg" alt="Вопрос Ответ">
+        <img class="questions__title" src="img/q-title.svg" alt="Вопрос Ответ">
 
         <div class="partner-questions__dialog">
             <img class="partner-questions__smile" src="img/part-q-smile.svg">
@@ -365,7 +367,8 @@
             <input class="partner-form__input" type="text" required placeholder="ИНН">
             <input class="partner-form__input" type="number" required placeholder="Действующий штат курьеров">
             <input class="partner-form__input" type="text" required placeholder="Название парка">
-            <textarea class="partner-form__input" id="comment" name="comment" rows="2" cols="33" placeholder="Комментарий/Вопрос(по желанию)"></textarea>
+            <textarea class="partner-form__input" id="comment" name="comment" rows="2" cols="33"
+                placeholder="Комментарий/Вопрос(по желанию)"></textarea>
             <p class="partner-form__info">Нажимая на кнопку, вы подтверждаете, что ознакомились с <a href="#"
                     class="form__info-link">политикой конфиденциальности</a> и даете согласие на обработку своих
                 персональных данных</p>
@@ -495,4 +498,27 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/app.min.js"></script>
+
+    <script>
+        const advBlocks = document.querySelectorAll('.partner-advantages__adv');
+        const spoilerElements = document.querySelectorAll('.partner-advantages__adv-spoiler');
+        
+        if (window.innerWidth < 1024) {
+            // Добавляем событие на каждый блок "adv"
+            advBlocks.forEach((block, index) => {
+                block.addEventListener('click', () => {
+                    // Убираем все скрытые элементы
+                    spoilerElements.forEach((element) => {
+                        element.style.display = 'none';
+                    });
+
+                    // Показываем соответствующий элемент
+                    spoilerElements[index].style.display = 'block';
+                });
+            });
+        }
+
+
+
+    </script>
 </body>
