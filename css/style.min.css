@@ -2834,14 +2834,11 @@
     display: none;
   }
   .client-connection__box {
-    margin-top: 110px;
     display: grid;
     width: 315px;
     grid-template-columns: 148px 148px;
     gap: 18px;
-    margin-bottom: 95px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 110px auto 95px;
   }
   .client-connection__box:nth-child(odd) {
     font-size: 20px;
