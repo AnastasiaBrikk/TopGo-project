@@ -1,6 +1,24 @@
-import * as jsFunctions from "./modules/functions.js";
+/*Проверка поддержки webp, добавление класса webp или no-webp для HTML*/
 
-jsFunctions.isWebp();
+function isWebp() {
+  // Проверка поддержки webp
+  function testWebP(callback) {
+    let webP = new Image();
+    webP.onload = webP.onerror = function () {
+      callback(webP.height == 2);
+    };
+    webP.src =
+      "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+  }
+
+  // Добавление класса _webp или _no-webp для HTML
+  testWebP(function (support) {
+    let className = support === true ? 'webp' : 'no-webp';
+    document.documentElement.classList.add(className);
+  });
+}
+
+isWebp();
 
 //slider news
 $(document).ready(function () {
@@ -88,41 +106,48 @@ $(document).ready(function () {
     autoplaySpeed: 0,
     adaptiveHeight: true,
     mobileFirst: true,
-    speed: 1500,
+    speed: 2000,
     arrows: false,
     dots: false,
-    draggable: true,
+    draggable: false,
     infinite: true,
     useTransform: true,
+    pauseOnHover: false,
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
+          pauseOnHover: false,
+          draggable: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          pauseOnHover: false,
+          draggable: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          pauseOnHover: false,
+          draggable: false,
         },
       },
     ],
   });
 });
-
-//partner-partners cards slider mobile
-// $(document).ready(function () {
-//   $(".partner-partners__card-slider").slick({
-//     centerMode: true,
-//     centerPadding: "60px",
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     // infinite: true,
-//     // // adaptiveHeight: true,
-//     // // mobileFirst: true,
-//     arrows: false,
-//     draggable: true,
-//     dots: false,
-//   });
-// });
 
 // Кнопка "наверх"
 const btnUp = document.querySelector(".btn-up");
@@ -155,18 +180,9 @@ const form = document.querySelector(".header__form");
 // Устанавливаем начальное состояние блока формы
 form.style.display = "none";
 close.style.display = "none";
-// button.style.display = "block";
 
 // Добавляем обработчик события на кнопку
 button.addEventListener("click", function () {
-  // if (close.style.display === "none") {
-  //   showEl(close);
-  //   button.style.display = "none";
-  // } else {
-  //   close.style.display = "none";
-  //   showEl(button);
-  // }
-
   if (form.style.display === "none") {
     form.style.display = "block";
     close.style.display = "block";
@@ -179,7 +195,6 @@ button.addEventListener("click", function () {
   } else {
     fadeOut(form);
     fadeOut(close);
-    // Плавное исчезновение блока
   }
 });
 
@@ -188,10 +203,6 @@ close.addEventListener("click", function () {
   close.style.display = "none";
   fadeOut(form);
 });
-
-// function showEl(el) {
-//   el.style.display = "block";
-// }
 
 // Функция для плавного появления блока
 function fadeIn(element) {
@@ -220,11 +231,9 @@ function fadeOut(element) {
 
 //burger-menu
 
-const burgerBtn = document.querySelector(".header__burger");
+let burgerBtn = document.querySelector(".header__burger");
 
-// burgerBtn.style.display = "none";
-
-if (window.innerWidth <= 768) {
+if (window.innerWidth < 768 && window.innerHeight < 1000) {
   burgerBtn.style.display = "block";
 }
 
@@ -261,10 +270,7 @@ burgerClose.addEventListener("click", function () {
 
 //скролл к блокам по ссылкам в меню
 
-// const newsBlock = document.getElementById("menu-news");
-// const teamBlock = document.getElementById("menu-team");
-
-$("#menu-news").click(function () {
+$("#header-news").click(function () {
   // ID откуда кливаем
   $("html, body").animate(
     {
@@ -274,12 +280,188 @@ $("#menu-news").click(function () {
   ); // Скорость прокрутки
 });
 
+$("#menu-news").click(function () {
+  // ID откуда кливаем
+  $("html, body").animate(
+    {
+      scrollTop: $(".news").offset().top,
+    },
+    1000
+  );
+});
+
 $("#menu-team").click(function () {
   // ID откуда кливаем
   $("html, body").animate(
     {
-      scrollTop: $(".team").offset().top, // класс объекта к которому приезжаем
+      scrollTop: $(".team").offset().top,
     },
     1000
-  ); // Скорость прокрутки
+  );
 });
+
+$("#header-team").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".team").offset().top,
+    },
+    1000
+  );
+});
+
+$("#partner-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".partner-form").offset().top,
+    },
+    1000
+  );
+});
+
+$("#partner-top-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".partner-form").offset().top,
+    },
+    1000
+  );
+});
+
+$("#partner-map-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".partner-form").offset().top,
+    },
+    1000
+  );
+});
+
+$("#client-top-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".client_form").offset().top,
+    },
+    1000
+  );
+});
+
+$("#client-header-btn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".client_form").offset().top,
+    },
+    1000
+  );
+});
+
+//team spoilers
+const spoiler1 = document.querySelector(".team__spoiler1");
+const spoilerSl1 = document.querySelector(".team__slide-spoiler1");
+const spoiler2 = document.querySelector(".team__spoiler2");
+const spoilerSl2 = document.querySelector(".team__slide-spoiler2");
+const spoiler3 = document.querySelector(".team__spoiler3");
+const spoilerSl3 = document.querySelector(".team__slide-spoiler3");
+const spoiler4 = document.querySelector(".team__spoiler4");
+const spoilerSl4 = document.querySelector(".team__slide-spoiler4");
+const btn1 = document.querySelector(".team__btn1");
+const btn2 = document.querySelector(".team__btn2");
+const btn3 = document.querySelector(".team__btn3");
+const btn4 = document.querySelector(".team__btn4");
+const slbtn1 = document.getElementById("team__slbtn1");
+const slbtn2 = document.getElementById("team__slbtn2");
+const slbtn3 = document.getElementById("team__slbtn3");
+const slbtn4 = document.getElementById("team__slbtn4");
+
+if (window.innerWidth > 768) {
+  btn1.addEventListener("click", function () {
+    spoiler2.style.display = "none";
+    spoiler3.style.display = "none";
+    spoiler4.style.display = "none";
+    spoiler1.style.display = "block";
+    setTimeout(function () {
+      spoiler1.style.display = "none";
+    }, 7000);
+  });
+
+  btn2.addEventListener("click", function () {
+    spoiler1.style.display = "none";
+    spoiler3.style.display = "none";
+    spoiler4.style.display = "none";
+    spoiler2.style.display = "block";
+    setTimeout(function () {
+      spoiler2.style.display = "none";
+    }, 7000);
+  });
+
+  btn3.addEventListener("click", function () {
+    spoiler1.style.display = "none";
+    spoiler2.style.display = "none";
+    spoiler4.style.display = "none";
+    spoiler3.style.display = "block";
+    setTimeout(function () {
+      spoiler3.style.display = "none";
+    }, 7000);
+  });
+
+  btn4.addEventListener("click", function () {
+    spoiler1.style.display = "none";
+    spoiler3.style.display = "none";
+    spoiler2.style.display = "none";
+    spoiler4.style.display = "block";
+    setTimeout(function () {
+      spoiler4.style.display = "none";
+    }, 7000);
+  });
+} else {
+  slbtn1.addEventListener("click", function () {
+    spoilerSl2.style.display = "none";
+    spoilerSl3.style.display = "none";
+    spoilerSl4.style.display = "none";
+    spoilerSl1.style.display = "block";
+    setTimeout(function () {
+      spoilerSl1.style.display = "none";
+    }, 7000);
+  });
+
+  slbtn2.addEventListener("click", function () {
+    spoilerSl1.style.display = "none";
+    spoilerSl3.style.display = "none";
+    spoilerSl4.style.display = "none";
+    spoilerSl2.style.display = "block";
+    setTimeout(function () {
+      spoilerSl2.style.display = "none";
+    }, 7000);
+  });
+
+  slbtn3.addEventListener("click", function () {
+    spoilerSl1.style.display = "none";
+    spoilerSl2.style.display = "none";
+    spoilerSl4.style.display = "none";
+    spoilerSl3.style.display = "block";
+    setTimeout(function () {
+      spoilerSl3.style.display = "none";
+    }, 7000);
+  });
+
+  slbtn4.addEventListener("click", function () {
+    spoilerSl1.style.display = "none";
+    spoilerSl2.style.display = "none";
+    spoilerSl3.style.display = "none";
+    spoilerSl4.style.display = "block";
+    setTimeout(function () {
+      spoilerSl4.style.display = "none";
+    }, 7000);
+  });
+}
+
+//Неактивные ссылки на страницы в разработке на тачскринах
+if (window.innerWidth < 1024) {
+  document.querySelectorAll(".disabledLink").forEach((element) => {
+    element.addEventListener(
+      "click", function () {
+        element.classList.add("disabledLinkSpoiler")
+      }
+      
+    );
+  });
+}
