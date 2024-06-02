@@ -459,9 +459,10 @@ if (window.innerWidth < 1024) {
   document.querySelectorAll(".disabledLink").forEach((element) => {
     element.addEventListener(
       "click", function () {
-        element.classList.add("disabledLinkSpoiler")
+        element.classList.add("disabledLinkSpoiler");
+        setTimeout(element.classList.remove("disabledLinkSpoiler"), 4000);
       }
-      
     );
+    
   });
 }
