@@ -387,6 +387,8 @@
   background-color: #E1E1E1;
   border-radius: 15px 0 15px 15px;
   width: 266px;
+  padding-left: 3px;
+  padding-right: 3px;
   align-self: stretch;
   justify-self: start;
 }
