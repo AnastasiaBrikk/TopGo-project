@@ -234,29 +234,25 @@
         <h2 class="client-connection__title">Варианты подключения</h2>
 
         <div class="client-connection__box">
-            <button onmouseover="showSpoiler('connectionSpoiler1')" onmouseout="hideSpoiler('connectionSpoiler1')"
-                id="connection1" class="client-connection__btn">API</button>
-            <div id="connectionSpoiler1" class="client-connection__btn-spoiler1 client-connection__btn-spoiler">Прямая
+            <button id="connection1" class="client-connection__btn">API</button>
+            <div class="client-connection__btn-spoiler1 client-connection__btn-spoiler">Прямая
                 интеграция. Автоматическая
                 отправка в доставку и обмен статусами
                 и другими изменениями в заказе</div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler2')" onmouseout="hideSpoiler('connectionSpoiler2')"
-                id="connection2" class="client-connection__btn">Личный<br>кабинет</button>
-            <div id="connectionSpoiler2" class="client-connection__btn-spoiler2 client-connection__btn-spoiler">Создание
+            <button id="connection2" class="client-connection__btn">Личный<br>кабинет</button>
+            <div class="client-connection__btn-spoiler2 client-connection__btn-spoiler">Создание
                 заказов вручную
                 и отслеживание каждого действующего, а также своей истории</div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler3')" onmouseout="hideSpoiler('connectionSpoiler3')"
-                id="connection3" class="client-connection__btn">liko</button>
-            <div id="connectionSpoiler3" class="client-connection__btn-spoiler3 client-connection__btn-spoiler">
+            <button id="connection3" class="client-connection__btn">liko</button>
+            <div class="client-connection__btn-spoiler3 client-connection__btn-spoiler">
                 Заказывайте доставку через кассу
                 ресторана. Модуль для кассовой система автоматизации ресторанов легко установить и просто использовать
             </div>
 
-            <button onmouseover="showSpoiler('connectionSpoiler4')" onmouseout="hideSpoiler('connectionSpoiler4')"
-                id="connection4" class="client-connection__btn">Ритейл CRM</button>
-            <div id="connectionSpoiler4" class="client-connection__btn-spoiler4 client-connection__btn-spoiler">В своей
+            <button id="connection4" class="client-connection__btn">Ритейл CRM</button>
+            <div class="client-connection__btn-spoiler4 client-connection__btn-spoiler">В своей
                 CRM передаете заказ в доставку,
                 а мы забираем его по прямому подключению</div>
         </div>
@@ -511,35 +507,48 @@
 
     <script src="js/app.min.js"></script>
     <script>
-        function showSpoiler(el) {
-            document.querySelector(`#${el}`).style.display = 'block';
-        }
 
-        function hideSpoiler(el) {
-            document.querySelector(`#${el}`).style.display = 'none';
-        }
-
-        function showSpoilerClick(el, array) {
-            docement.querySelectorAll(`#${array}`).forEach(element => {
-                element.style.display = "none";
-            });
-            document.querySelector(`#${el}`).style.display = "block";
-        }
+        //Client page при клике появление спойлеров к блокам подключений (пока нет ссылок)
 
         if (window.innerWidth < 1024) {
-            window.addEventListener('scroll', function () {
-                // Check the location of each desired element
-                document.querySelectorAll('.client-connection__btn-spoiler').forEach(function (element) {
-                    var bottomOfObject = element.offsetTop + element.offsetHeight;
-                    var bottomOfWindow = window.scrollY + window.innerHeight;
+            document.getElementById("connection1").addEventListener("click", function () {
+                document.querySelector(".client-connection__btn-spoiler1").style.display =
+                    "block";
+                setTimeout(function () {
+                    document.querySelector(".client-connection__btn-spoiler1").style.display =
+                        "none";
+                }, 6000);
+            });
 
-                    if (bottomOfWindow > bottomOfObject) {
-                        element.style.opacity = '1';
-                        element.style.transition = 'opacity 0.5s';
-                    }
-                });
+            document.getElementById("connection2").addEventListener("click", function () {
+                document.querySelector(".client-connection__btn-spoiler2").style.display =
+                    "block";
+                setTimeout(function () {
+                    document.querySelector(".client-connection__btn-spoiler2").style.display =
+                        "none";
+                }, 6000);
+            });
+
+            document.getElementById("connection3").addEventListener("click", function () {
+                document.querySelector(".client-connection__btn-spoiler3").style.display =
+                    "block";
+                setTimeout(function () {
+                    document.querySelector(".client-connection__btn-spoiler3").style.display =
+                        "none";
+                }, 6000);
+            });
+
+            document.getElementById("connection4").addEventListener("click", function () {
+                document.querySelector(".client-connection__btn-spoiler4").style.display =
+                    "block";
+                setTimeout(function () {
+                    document.querySelector(".client-connection__btn-spoiler4").style.display =
+                        "none";
+                }, 6000);
             });
         }
+
+
     </script>
 </body>
 

@@ -1671,9 +1671,9 @@
   }
   .partner-advantages .spoiler8 {
     background-image: url("../img/mobile-part-spoiler4.svg");
-    width: 177px;
-    height: 69px;
-    padding: 6px 12px 8px 38px;
+    width: 182px;
+    height: 72px;
+    padding: 8px 12px 8px 38px;
     top: 300px;
     left: 139px;
   }
@@ -2386,6 +2386,22 @@
   bottom: 5px;
 }
 
+#connection1:hover ~ .client-connection__btn-spoiler1 {
+  display: block;
+}
+
+#connection2:hover ~ .client-connection__btn-spoiler2 {
+  display: block;
+}
+
+#connection3:hover ~ .client-connection__btn-spoiler3 {
+  display: block;
+}
+
+#connection4:hover ~ .client-connection__btn-spoiler4 {
+  display: block;
+}
+
 .client-q-phrase1 {
   background-image: url("../img/client-phrase1.svg");
   background-position: center;
@@ -2640,8 +2656,6 @@
     font-size: 9px;
     left: -40px;
     top: -60px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler2 {
     background-image: url("../img/tablet-client-conn-spoiler2.svg");
@@ -2651,8 +2665,6 @@
     font-size: 9px;
     left: 80px;
     bottom: -67px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler3 {
     background-image: url("../img/tablet-client-conn-spoiler3.svg");
@@ -2662,8 +2674,6 @@
     font-size: 9px;
     right: 80px;
     bottom: -80px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler4 {
     background-image: url("../img/tablet-client-conn-spoiler4.svg");
@@ -2673,8 +2683,6 @@
     font-size: 9px;
     right: -40px;
     top: -65px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__title2 {
     width: 404px;
@@ -2858,7 +2866,7 @@
     width: 315px;
     grid-template-columns: 148px 148px;
     gap: 18px;
-    margin: 110px auto 95px;
+    margin: 70px auto;
   }
   .client-connection__box:nth-child(odd) {
     font-size: 20px;
@@ -2875,8 +2883,6 @@
     padding: 6px 8px 17px;
     font-size: 9px;
     left: 0;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler2 {
     background-image: url("../img/mobile-client-conn-spoiler1.svg");
@@ -2887,8 +2893,6 @@
     right: 0;
     left: auto;
     top: -75px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler3 {
     background-image: url("../img/mobile-client-conn-spoiler3.svg");
@@ -2897,8 +2901,6 @@
     padding: 16px 15px 8px;
     font-size: 9px;
     left: 0;
-    display: block;
-    opacity: 0;
   }
   .client-connection__btn-spoiler4 {
     background-image: url("../img/mobile-client-conn-spoiler4.svg");
@@ -2908,8 +2910,6 @@
     font-size: 9px;
     right: 0;
     top: 115px;
-    display: block;
-    opacity: 0;
   }
   .client-connection__title2 {
     background-image: url("../img/mobile-client-part-title2.svg");
