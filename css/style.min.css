@@ -290,7 +290,7 @@
   cursor: pointer;
 }
 .partner-advantages__box {
-  width: 880px;
+  width: 884px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -3338,28 +3338,6 @@ header {
   padding: 10px 15px;
   top: 70px;
 }
-.top__btn4:hover::after:active::after {
-  content: "Страница в разработке";
-  background-color: #dddddd;
-  position: absolute;
-  color: #2C2D35;
-  font-size: 14px;
-  border: 1px solid #6C6C6C;
-  border-radius: 8px;
-  padding: 10px 15px;
-  top: 70px;
-}
-.top__btn4:hover::after:focus::after {
-  content: "Страница в разработке";
-  background-color: #dddddd;
-  position: absolute;
-  color: #2C2D35;
-  font-size: 14px;
-  border: 1px solid #6C6C6C;
-  border-radius: 8px;
-  padding: 10px 15px;
-  top: 70px;
-}
 .top__tel {
   position: fixed;
   width: 4.2vw;
@@ -3385,6 +3363,18 @@ header {
   z-index: 16;
   cursor: pointer;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.disabledLink::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 14px;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 10px 15px;
+  top: 70px;
 }
 
 #index-top-logo {
