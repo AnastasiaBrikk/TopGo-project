@@ -3283,11 +3283,6 @@ header {
   font-size: 16px;
   font-weight: 700;
 }
-.top__skolkovo-icon {
-  position: absolute;
-  top: 18px;
-  right: calc(50% - 594px);
-}
 .top__btns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3333,6 +3328,28 @@ header {
   position: relative;
 }
 .top__btn4:hover::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 14px;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 10px 15px;
+  top: 70px;
+}
+.top__btn4:hover::after:active::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 14px;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 10px 15px;
+  top: 70px;
+}
+.top__btn4:hover::after:focus::after {
   content: "Страница в разработке";
   background-color: #dddddd;
   position: absolute;
@@ -3605,7 +3622,7 @@ header {
   font-weight: 700;
   position: absolute;
   text-align: center;
-  top: 440px;
+  top: 100%;
   z-index: 10;
 }
 .team__spoiler2 {
@@ -3625,7 +3642,7 @@ header {
   font-weight: 700;
   position: absolute;
   text-align: center;
-  top: 440px;
+  top: 100%;
 }
 .team__spoiler3 {
   z-index: 10;
@@ -3644,7 +3661,7 @@ header {
   font-weight: 700;
   position: absolute;
   text-align: center;
-  top: 440px;
+  top: 100%;
 }
 .team__spoiler4 {
   z-index: 10;
@@ -3663,8 +3680,9 @@ header {
   font-weight: 700;
   position: absolute;
   text-align: center;
-  top: 435px;
-  right: -45px;
+  top: 100%;
+  right: 0;
+  left: 0;
 }
 .team__btn {
   color: #ffffff;
@@ -3782,9 +3800,8 @@ header {
   background-image: url("../img/team-bg-text.svg");
   background-size: 100%;
   object-fit: cover;
-  height: 16.55%;
-  width: 50.972vw;
-  max-width: 734px;
+  height: 166px;
+  width: 734px;
   background-repeat: no-repeat;
   right: 19.6527vw;
   bottom: 12%;
@@ -4260,7 +4277,7 @@ footer {
   fill: #BDBDBD;
 }
 .footer__apps {
-  width: 10.0694vw;
+  width: 102px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -4274,7 +4291,7 @@ footer {
   width: 100%;
 }
 .footer__apps_icon {
-  width: 7.1527vw;
+  width: 102px;
 }
 .footer__apps_icon path {
   transition: all 0.3s ease;
@@ -4289,6 +4306,30 @@ footer {
   fill: #BDBDBD;
 }
 .footer__apps_link2:hover::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 7px 13px;
+  top: 110px;
+}
+.footer__apps_link2:active::after {
+  content: "Страница в разработке";
+  background-color: #dddddd;
+  position: absolute;
+  color: #2C2D35;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #6C6C6C;
+  border-radius: 8px;
+  padding: 7px 13px;
+  top: 110px;
+}
+.footer__apps_link2:focus::after {
   content: "Страница в разработке";
   background-color: #dddddd;
   position: absolute;
@@ -4449,9 +4490,9 @@ footer {
     z-index: 11;
   }
   .team__spoiler4 {
-    top: 998px;
     z-index: 11;
-    right: -90px;
+    top: 95%;
+    left: -145%;
   }
   .team__el1 {
     display: none;
@@ -4480,7 +4521,7 @@ footer {
   }
   .about__win-win {
     top: 52px;
-    right: 11.328vw;
+    right: 10px;
     max-width: 120px;
   }
   .about__cycle {
@@ -4895,8 +4936,8 @@ footer {
     width: 345px;
     height: 62px;
     padding: 12px 63px 16px 40px;
-    right: 85px;
-    top: 427px;
+    left: -100%;
+    top: 100%;
   }
   .team__text {
     font-size: 20px;
@@ -4904,6 +4945,7 @@ footer {
   }
   .team__bg-text {
     width: 47vw;
+    padding-bottom: -1px;
   }
   .team__title-bg {
     height: 80px;
@@ -5088,7 +5130,10 @@ footer {
     max-height: 150vh;
   }
   .team__text {
-    padding-bottom: 30px;
+    padding-bottom: 0;
+  }
+  .team__spoiler4 {
+    left: 10%;
   }
   .team__img-box {
     height: 280px;
@@ -5104,6 +5149,11 @@ footer {
   }
 }
 @media (min-width: 1600px) and (max-width: 1800px) {
+  .top {
+    padding-top: 90px;
+    height: 89vh;
+    max-height: 920px;
+  }
   .top__box {
     gap: 30px;
   }
@@ -5133,6 +5183,9 @@ footer {
   .team {
     padding-bottom: 25%;
     max-height: 130vh;
+  }
+  .team__spoiler4 {
+    left: 15%;
   }
   .team__position {
     font-weight: 600;
@@ -5203,6 +5256,9 @@ footer {
   .team__position {
     font-weight: 600;
   }
+  .team__spoiler4 {
+    left: 17%;
+  }
   .team__item {
     gap: 20px;
   }
@@ -5211,6 +5267,9 @@ footer {
   }
   .team__bg-text {
     right: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__apps_title {
     padding-left: 10%;
@@ -5259,21 +5318,25 @@ footer {
   }
   .team__text {
     font-size: 2rem;
-    width: max-content;
-    padding-right: 15rem;
-    padding-left: 8rem;
-    padding-bottom: 3rem;
+    width: 600px;
   }
   .team__bg-text {
-    max-width: 1000px;
-    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1004px;
+    height: 227px;
     bottom: 13%;
+    padding-top: 20px;
   }
   .team__name {
     font-size: 2rem;
   }
   .team__position {
     font-size: 1.6rem;
+  }
+  .team__spoiler4 {
+    left: 25%;
   }
   .questions {
     max-height: 800px;
