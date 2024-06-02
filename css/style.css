@@ -1164,7 +1164,7 @@
     min-height: 800px;
   }
   .partner-advantages__else {
-    display: none;
+    font-size: 18px;
   }
   .partner-advantages__el3 {
     display: none;
@@ -1210,6 +1210,8 @@
   }
   .partner-advantages .adv2 {
     height: 111px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
   .partner-advantages .spoiler3 {
     background-image: url("../img/tablet-part-spoiler3.svg");
@@ -1220,7 +1222,7 @@
     padding: 13px 72px 16px 22px;
   }
   .partner-advantages .adv3 {
-    width: 209px;
+    width: 211px;
   }
   .partner-advantages .spoiler4 {
     width: 222px;
@@ -3367,7 +3369,7 @@ header {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
 }
 
-.disabledLink::after {
+.disabledLinkSpoiler::after {
   content: "Страница в разработке";
   background-color: #dddddd;
   position: absolute;
