@@ -763,7 +763,7 @@
 
 .partner-advantages .spoiler11 {
   background-image: url("../img/part-adv-spoiler11.svg");
-  width: 197px;
+  width: 202px;
   height: 246px;
   display: none;
   position: absolute;
@@ -2247,7 +2247,7 @@ header {
 }
 
 .no-webp .top{
-  background-image: url("../img/bg-top.jpg"); }
+  background-image: url("../img/new-top-bg-main.jpg.jpg"); }
 
 .top {
   position: relative;
@@ -3573,7 +3573,7 @@ footer {
   font-size: 20px;
   font-weight: 700;
   font-family: Montserrat;
-  width: 100%;
+  width: 90%;
 }
 
 .footer__apps_icon {
@@ -3698,7 +3698,7 @@ footer {
   }
 
   .no-webp .partner-top{
-    background-image: url("../img/big-desktop-bg-top.jpg"); }
+    background-image: url("../img/new-top-bg-main.jpg"); }
 
   .partner-top {
     max-height: 1100px;
@@ -3754,7 +3754,7 @@ footer {
   }
 
   .no-webp .top{
-    background-image: url("../img/big-bg-top.jpg"); }
+    background-image: url("../img/new-top-bg-main.jpg"); }
 
   .top {
     height: 89vh;
@@ -6028,6 +6028,9 @@ footer {
     font-size: 22px;
   }
 
+  .no-webp .top{
+    background-image: url("../img/new-top-bg-main.jpg"); }
+
   .top {
     padding-top: 90px;
     height: 89vh;
@@ -6100,7 +6103,7 @@ footer {
   }
 
   .footer__apps_title {
-    padding-left: 13px;
+    padding-left: 0;
   }
 }
 
@@ -6128,7 +6131,7 @@ footer {
   }
 
   .no-webp .top{
-    background-image: url("../img/big-bg-top.jpg"); }
+    background-image: url("../img/new-top-bg-main.jpg"); }
 
   .top {
     height: 89vh;
@@ -6212,8 +6215,12 @@ footer {
             align-items: center;
   }
 
+  .footer__apps {
+    margin-right: 15px;
+  }
+
   .footer__apps_title {
-    padding-left: 10%;
+    padding-left: 0;
   }
 }
 
@@ -7840,7 +7847,7 @@ footer {
 
 .webp .client-connection{ background-image: url(../img/client-connection-bg.webp); }
 
-.webp .top{ background-image: url(../img/bg-top.webp); }
+.webp .top{ background-image: url(../img/new-top-bg-main.webp); }
 
 .webp .about{ background-image: url(../img/about-bg.webp); }
 
@@ -7871,7 +7878,12 @@ footer {
 
 @media (min-width: 2000px){
 
-  .webp .top{ background-image: url(../img/big-bg-top.webp); }
+  .webp .top{ background-image: url(../img/new-top-bg-main.webp); }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px){
+
+  .webp .top{ background-image: url(../img/new-top-bg-main.webp); }
 }
 
 @media (min-height: 1000px) and (max-width: 1024px){
@@ -7966,7 +7978,7 @@ footer {
 
 @media (min-width: 1800px) and (max-width: 2000px){
 
-  .webp .top{ background-image: url(../img/big-bg-top.webp); }
+  .webp .top{ background-image: url(../img/new-top-bg-main.webp); }
 }
 
 @media (min-width: 767px) and (max-width: 1024px){
