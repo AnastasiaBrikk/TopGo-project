@@ -5172,14 +5172,22 @@ footer {
     padding: 10px 17px;
   }
 
-  .no-webp .top {
+  .top {
     background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
-  .top {
-    height: 91vh;
+  .partner-top {
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
     background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
+
 
   .top__main-logo {
     width: 148px;
@@ -5779,12 +5787,21 @@ footer {
 }
 
 @media (max-width: 767px) and (max-height: 730px) {
+
   .top {
-    background-image: url("../img/mobile-small-bg-top.jpg");
-    height: 90vh;
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
     background-position: bottom;
-    background-repeat: no-repeat;
     background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .partner-top {
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .partner-about {
@@ -5797,6 +5814,21 @@ footer {
 }
 
 @media (min-height: 730px) and (max-width: 767px) {
+  .top {
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .partner-top {
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
 
   .about {
@@ -5842,8 +5874,6 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-
-
 
   .top__heading {
     font-size: 16px;
