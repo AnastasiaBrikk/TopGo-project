@@ -3714,6 +3714,106 @@ footer {
   font-family: Montserrat;
 }
 
+.webp .newsPage {
+  background-image: url(../img/newsPage-bg.webp);
+}
+
+.webp .partner-top {
+  background-image: url(../img/part-bg-top.webp);
+}
+
+.webp .partner-about {
+  background-image: url(../img/part-about-bg.webp);
+}
+
+.webp .partner-advantages {
+  background-image: url(../img/part-adv-bg.webp);
+}
+
+.webp .partner-map {
+  background-image: url(../img/part-map-bg.webp);
+}
+
+.webp .partner-partners {
+  background-image: url(../img/part-parts-bg.webp);
+}
+
+.webp .partner-questions {
+  background-image: url(../img/part-q-bg.webp);
+}
+
+.webp .partner-form {
+  background-image: url(../img/bg-form.webp);
+}
+
+.webp .client-cards {
+  background-image: url(../img/client-cards-bg.webp);
+}
+
+.webp .client-cards__card_face--front {
+  background-image: url(../img/client-bg-card.webp);
+}
+
+.webp .client-cards__card_face--back {
+  background-image: url(../img/client-cards-card-bg-back.webp);
+}
+
+.webp .client-connection {
+  background-image: url(../img/client-connection-bg.webp);
+}
+
+.webp .top {
+  background-image: url(../img/new-top-bg-main.webp);
+}
+
+.webp .about {
+  background-image: url(../img/about-bg.webp);
+}
+
+.webp .team {
+  background-image: url(../img/bg-team.webp);
+}
+
+.webp .news {
+  background-image: url(../img/bg-news.webp);
+}
+
+.webp .questions {
+  background: url(../img/bg-question.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.webp .questions__phrase_1 {
+  background-image: url(../img/quest-phrase1.webp);
+}
+
+.webp .questions__phrase_2 {
+  background-image: url(../img/quest-phrase2.webp);
+}
+
+.webp .questions__phrase_3 {
+  background-image: url(../img/quest-phrase3.webp);
+}
+
+.webp .questions__phrase_4 {
+  background-image: url(../img/quest-phrase4.webp);
+}
+
+.webp .questions__phrase_5 {
+  background-image: url(../img/quest-phrase5.webp);
+}
+
+.webp .questions__phrase_6 {
+  background-image: url(../img/quest-phrase6.webp);
+}
+
+.webp .form {
+  background-image: url(../img/bg-form.webp);
+}
+
+
 @media (min-width: 2000px) {
   .header__li {
     font-size: 22px;
@@ -8733,105 +8833,6 @@ footer {
   }
 }
 
-.webp .newsPage {
-  background-image: url(../img/newsPage-bg.webp);
-}
-
-.webp .partner-top {
-  background-image: url(../img/part-bg-top.webp);
-}
-
-.webp .partner-about {
-  background-image: url(../img/part-about-bg.webp);
-}
-
-.webp .partner-advantages {
-  background-image: url(../img/part-adv-bg.webp);
-}
-
-.webp .partner-map {
-  background-image: url(../img/part-map-bg.webp);
-}
-
-.webp .partner-partners {
-  background-image: url(../img/part-parts-bg.webp);
-}
-
-.webp .partner-questions {
-  background-image: url(../img/part-q-bg.webp);
-}
-
-.webp .partner-form {
-  background-image: url(../img/bg-form.webp);
-}
-
-.webp .client-cards {
-  background-image: url(../img/client-cards-bg.webp);
-}
-
-.webp .client-cards__card_face--front {
-  background-image: url(../img/client-bg-card.webp);
-}
-
-.webp .client-cards__card_face--back {
-  background-image: url(../img/client-cards-card-bg-back.webp);
-}
-
-.webp .client-connection {
-  background-image: url(../img/client-connection-bg.webp);
-}
-
-.webp .top {
-  background-image: url(../img/new-top-bg-main.webp);
-}
-
-.webp .about {
-  background-image: url(../img/about-bg.webp);
-}
-
-.webp .team {
-  background-image: url(../img/bg-team.webp);
-}
-
-.webp .news {
-  background-image: url(../img/bg-news.webp);
-}
-
-.webp .questions {
-  background: url(../img/bg-question.webp);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
-.webp .questions__phrase_1 {
-  background-image: url(../img/quest-phrase1.webp);
-}
-
-.webp .questions__phrase_2 {
-  background-image: url(../img/quest-phrase2.webp);
-}
-
-.webp .questions__phrase_3 {
-  background-image: url(../img/quest-phrase3.webp);
-}
-
-.webp .questions__phrase_4 {
-  background-image: url(../img/quest-phrase4.webp);
-}
-
-.webp .questions__phrase_5 {
-  background-image: url(../img/quest-phrase5.webp);
-}
-
-.webp .questions__phrase_6 {
-  background-image: url(../img/quest-phrase6.webp);
-}
-
-.webp .form {
-  background-image: url(../img/bg-form.webp);
-}
-
 @media (min-width: 2000px) {
 
   .webp .partner-top {
@@ -8853,10 +8854,10 @@ footer {
   }
 }
 
-/* 
+
 @media (min-width: 1800) and (max-width: 2000) {
   .webp .partner-top{ background-image: url(../img/big-desktop-bg-top.webp); }
-} */
+}
 
 @media (min-height: 1000px) and (max-width: 1024px) {
 
@@ -8943,7 +8944,7 @@ footer {
     background-image: url(../img/mobile-client-conn-bg.webp);
   }
 }
-
+/* 
 @media (max-width: 767px) {
 
   .webp .top {
@@ -8953,7 +8954,7 @@ footer {
     background-repeat: no-repeat;
     height: 89.5vh;
   }
-}
+} */
 
 @media (max-width: 767px) {
 
@@ -8975,21 +8976,21 @@ footer {
     background-image: url(../img/mobile-bg-q-1.webp);
   }
 }
-
+/* 
 @media (max-width: 767px) and (max-height: 730px) {
 
   .webp .top {
     background-image: url(../img/mobile-small-bg-top.webp);
   }
 
-}
-
+} */
+/* 
 @media (min-height: 800px) and (max-width: 767px) {
 
   .webp .top, .webp .partner-top {
     background-image: url(../img/mobile-long-bg-top.webp);
   }
-}
+} */
 
 @media (min-width: 1800px) and (max-width: 2000px) {
 
