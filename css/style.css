@@ -252,7 +252,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 850px;
+  min-height: 840px;
 }
 
 .partner-about__title {
@@ -285,7 +285,6 @@
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
-  width: 59vw;
   color: #fff;
   max-width: 847px;
   text-align: center;
@@ -305,7 +304,7 @@
 .partner-about__driver {
   position: absolute;
   bottom: 0;
-  right: 55px;
+  right: 0;
 }
 
 .no-webp .partner-advantages{
@@ -900,14 +899,14 @@
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
-  font-size: 30px;
+  font-size: 29px;
   font-family: Montserrat;
   font-weight: 700;
   text-align: center;
   background-size: contain;
   color: black;
-  width: 620px;
-  height: 105px;
+  width: 625px;
+  height: 107px;
   margin: 0 auto;
 }
 
@@ -934,8 +933,7 @@
 }
 
 .partner-map__hero {
-  width: 315px;
-  height: 348px;
+  width: 300px;
   bottom: 0;
   left: 5px;
   position: absolute;
@@ -3135,7 +3133,7 @@ header {
 }
 
 .no-webp .questions{
-  background: url("../img/bg-question.jpg") 0 0 no-repeat; }
+  background: url("../img/bg-question.jpg")}
 
 .questions {
   -o-object-fit: cover;
@@ -6303,7 +6301,7 @@ footer {
 
   .partner-about {
     padding-top: 40px;
-    min-height: 720px;
+    min-height: 540px;
     max-height: 103vh;
   }
 
@@ -6530,7 +6528,7 @@ footer {
     height: 118px;
     padding-bottom: 65px;
     padding-right: 95px;
-    bottom: 100px;
+    bottom: 75px;
     right: 22vw;
   }
 
@@ -7031,6 +7029,14 @@ footer {
 }
 
 @media (min-width: 767px) and (max-height: 1024px) and (max-width: 1400px) and (orientation: landscape) {
+  .partner-about__el2 {
+    display: none;
+  }
+
+  .partner-top__el1 {
+    display: none;
+  }
+
   .no-webp .partner-advantages{
     background-image: url("../img/tablet-part-bg-adv.jpg"); }
 
@@ -8664,7 +8670,12 @@ footer {
 
 .webp .news{ background-image: url(../img/bg-news.webp); }
 
-.webp .questions{ background: url(../img/bg-question.webp) 0 0 no-repeat; }
+.webp .questions{ 
+  background: url(../img/bg-question.webp); 
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
 .webp .questions__phrase_1{ background-image: url(../img/quest-phrase1.webp); }
 
@@ -8706,7 +8717,13 @@ footer {
 
 @media (max-width: 767px){
 
-  .webp .partner-top{ background-image: url(../img/mobile-long-bg-top.webp); }
+  .webp .partner-top{ 
+    background-image: url(../img/mobile-long-bg-top.webp);
+    background-position: bottom;
+    background-size: 100%;
+    height: 89.5vh;
+    background-repeat: no-repeat;
+   }
 }
 
 @media (max-width: 767px){
@@ -8761,7 +8778,11 @@ footer {
 
 @media (max-width: 767px){
 
-  .webp .top{ background-image: url(../img/mobile-long-bg-top.webp); }
+  .webp .top{ background-image: url(../img/mobile-long-bg-top.webp);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 89.5vh; }
 }
 
 @media (max-width: 767px){
