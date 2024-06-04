@@ -4098,11 +4098,8 @@ footer {
     display: flex;
   }
 
-  .no-webp .partner-top {
-    background-image: url("../img/mobile-long-bg-top.jpg");
-  }
-
   .partner-top {
+    background-image: url(../img/mobile-long-bg-top.jpg);
     background-position: bottom;
     background-size: 100%;
     height: 89.5vh;
