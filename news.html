@@ -4,32 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Партнерам</title>
 </head>
+
+<style>
+    .no-webp .newsPage {
+        background-image: url("../img/newsPage-bg.jpg");
+    }
+
+    .newsPage {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 84px;
+        padding-bottom: 100px;
+        min-height: 88vh;
+    }
+
+    .newsPage__box {
+
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .newsPage__box img {
+        min-width: 250px;
+        width: 17.3vw;
+    }
+
+    .newsPage__content {
+        width: 40.6vw;
+        min-width: 585px;
+    }
+
+    .newsPage__date {
+        padding-top: 0 !important;
+        padding-bottom: 20px;
+        text-align: start;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Montserrat;
+    }
+
+    .newsPage__heading {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Montserrat;
+        padding-bottom: 22px;
+        padding-top: 0;
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .newsPage__text {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Montserrat;
+        line-height: 19px;
+    }
+
+    .newsPage__el {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    @media (min-width: 767px) and (max-width: 1024px) {
+        .header__logo-icon {
+            display: block;
+            visibility: visible;
+        }
+
+        .header__logo {
+            display: block;
+            visibility: visible;
+        }
+
+        .no-webp .newsPage {
+            background-image: url("/img/tablet-bg-news-vertical.jpg");
+        }
+
+        .webp .newsPage {
+            background-image: url("/img/tablet-bg-news-vertical.webp");
+        }
+
+        .newsPage {
+            min-height: 85vh;
+            padding-top: 50px;
+        }
+
+        .newsPage__box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .newsPage__date {
+            text-align: center;
+        }
+
+        .newsPage__heading {
+            text-align: center;
+        }
+
+        .newsPage__el {
+            display: none;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1024px) and (max-height: 1024px) {
+        .header__logo-icon {
+            display: block;
+            visibility: visible;
+        }
+
+        .header__logo {
+            display: block;
+            visibility: visible;
+        }
+
+        .no-webp .newsPage {
+            background-image: url("/img/tablet-bg-newsPage-horizontal.jpg");
+        }
+
+        .webp .newsPage {
+            background-image: url("/img/tablet-bg-newsPage-horizontal.webp");
+        }
+
+        .newsPage {
+            padding-top: 50px;
+        }
+
+        .newsPage__box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .newsPage__date {
+            text-align: center;
+        }
+
+        .newsPage__heading {
+            text-align: center;
+        }
+
+        .newsPage__el {
+            display: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .no-webp .newsPage {
+            background-image: url("/img/mobile-newsPage-bg.jpg");
+        }
+
+        .webp .newsPage {
+            background-image: url("/img/mobile-newsPage-bg.webp");
+        }
+
+        .newsPage {
+            padding-top: 54px;
+        }
+
+        .newsPage__box {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .newsPage__content {
+            width: 100%;
+            min-width: 260px;
+        }
+
+        .newsPage__heading {
+            font-size: 18px;
+        }
+
+        .newsPage__text {
+            font-size: 13px;
+        }
+
+        .newsPage__el {
+            display: none;
+        }
+    }
+</style>
 
 <body>
     <header>
         <div class="header center">
-            <a class="header__logo-icon" href="index.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+            <a class="header__logo-icon" href="#"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
             <nav class="header__menu">
                 <ul>
-                    <a href="index.html" class="header__link">
+                    <a href="index.html" id="header-news" class="header__link">
                         <li class="header__li">Главная</li>
                     </a>
-                    <a href="https://topgo-vacancy.ru/" class="header__link">
-                        <li class="header__li">Курьерам</li>
+                    <a href="partner.html" class="header__link">
+                        <li class="header__li">Партнерам</li>
                     </a>
-                    <a href="client.html" class="header__link">
+                    <a href="https://spb.hh.ru/employer/11013820?hhtmFrom=vacancy" class="header__link">
                         <li class="header__li">Бизнесу</li>
                     </a>
                 </ul>
             </nav>
-            <div class="header__btns">
-                <button id="partner-btn" class="header__btn">Стать партнером</button>
-                <a href="https://partner.topgo.group/" class="header__btn">Войти в&nbsp;ЛК</a>
-            </div>
-            <div class="partner-header__medias">
+            <div class="header__medias">
                 <a href="https://vk.com/topgovacancy" class="header__media">
                     <svg class="header__media-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +251,7 @@
             </div>
             <div class="header__burger-menu">
                 <a href="index.html" class="header__burger-menu_link">Главная</a>
-                <a href="https://topgo-vacancy.ru/" class="header__burger-menu_link">Курьерам</a>
+                <a href="partner.html" class="header__burger-menu_link">Партнерам</a>
                 <a href="client.html" class="header__burger-menu_link">Бизнесу</a>
             </div>
             <svg class="header__burger" width="34" height="30" viewBox="0 0 34 30" fill="none"
@@ -88,7 +270,6 @@
                     d="M23.6642 2C23.6642 1.55862 23.4889 1.13532 23.1768 0.823224C22.8647 0.511124 22.4414 0.335788 22 0.335788C21.5586 0.335788 21.1353 0.511124 20.8232 0.823224L0.823245 20.8232C0.511146 21.1353 0.335807 21.5586 0.335808 22C0.335807 22.4414 0.511146 22.8647 0.823245 23.1768C1.13534 23.4889 1.55864 23.6642 2.00002 23.6642C2.4414 23.6642 2.8647 23.4889 3.1768 23.1768L23.1768 3.17678C23.4889 2.86468 23.6642 2.44138 23.6642 2Z"
                     fill="#8C8C8C" stroke="#8C8C8C" stroke-width="0.5" />
             </svg>
-
         </div>
     </header>
 
@@ -102,13 +283,7 @@
         </form>
     </div>
 
-    <section class="top">
-        <div class="partner-top__box">
-            <img class="top__main-logo" src="img/top-mainlogo.svg" alt="main logo">
-            <h1 class="partner-top__heading">ERP СИСТЕМА ДЛЯ ПАРТНЕРОВ В&nbsp;СФЕРЕ ЭКСПРЕСС-ДОСТАВКИ
-            </h1>
-            <button id="partner-top-btn" class="partner-top__btn">СОТРУДНИЧАТЬ</button>
-        </div>
+    <main class="main newsPage">
         <div class="top__tel">
             <svg class="top__tel_form-close" width="48" height="48" viewBox="0 0 48 48" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -126,6 +301,7 @@
                     fill="#8C8C8C" stroke="#8C8C8C" stroke-width="0.5" />
             </svg>
 
+            <!-- <img class="heartbeat" src="img/tel.svg"> -->
             <svg class="top__tel_icon heartbeat" width="48" height="48" viewBox="0 0 48 48" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -139,287 +315,35 @@
                     fill="white" />
             </svg>
         </div>
-        <img class="partner-top__el1" src="img/part-el1.svg">
-    </section>
 
-    <section class="partner-about">
-        <h2 class="partner-about__title">О&nbsp;компании Топ<span class="red">Go</span></h2>
-        <p class="partner-about__text">
-            Добро пожаловать в мир инноваций доставки с ТопGo!
-            <br>
-            Работая в партнерстве с крупными ритейлерами, ресторанами, аптеками и другими предприятиями, мы стремимся не
-            только обеспечить быструю и надежную доставку, но и создать ценность для каждого партнера. Как резидент
-            Сколково, мы нацелены на инновации.
-            <br>
-            Мы создали ERP систему в сфере доставки, которая работает более чем в 260 городах России. Этот инновационный
-            подход объединяет потребности клиентов и возможности партнеров в единую гармоничную систему.
-            Наша цель – создать уникальный опыт, где каждая сторона получает максимальную выгоду от эффективного
-            управления заказами, открывая новые перспективы для развития бизнеса.
-            <br>
-            Присоединяйтесь к ТопGo и откройте новый уровень развития в сфере курьерской доставки – это больше, чем
-            просто сервис, это возможность расти вместе.
-        </p>
-
-        <img class="partner-about__el2" src="img/partner-about-el2.svg">
-        <img class="partner-about__driver" src="img/about-driver.svg">
-    </section>
-
-    <section class="partner-advantages">
-        <h2 class="partner-advantages__title">С&nbsp;вас&nbsp;&mdash; курьеры, с&nbsp;нас&nbsp;&mdash; заказы!</h2>
-        <p class="partner-advantages__else">А&nbsp;ещё:</p>
-        <div class="partner-advantages__box">
-            <div class="partner-advantages__adv adv1">Личный кабинет </div>
-            <div class="partner-advantages__adv-spoiler spoiler1">100% доступ и&nbsp;контроль над работой своих
-                исполнителей
-            </div>
-
-            <div class="partner-advantages__adv adv2">Диспетчерская поддержка </div>
-            <div class="partner-advantages__adv-spoiler spoiler2">Решение всех возникающих вопросов по&nbsp;работе
-                сервиса
-                нашей командой диспетчеров 24/7</div>
-
-            <div class="partner-advantages__adv adv3">Платёжное решение
-                с&nbsp;моментальными выплатами</div>
-            <div class="partner-advantages__adv-spoiler spoiler3">Помощь
-                в&nbsp;выстраивании системы выплат исполнителям на&nbsp;выгодных условиях</div>
-
-            <div class="partner-advantages__adv adv4">Маркетинг</div>
-            <div class="partner-advantages__adv-spoiler spoiler4">Дизайн-макеты, brand book, продающие тексты, помощь в
-                создании сайта и&nbsp;настройка посадочный страницы, брендированные вещи/сумка и&nbsp;пр.</div>
-
-            <div class="partner-advantages__adv adv5">Готовые решения лидогенерации </div>
-            <div class="partner-advantages__adv-spoiler spoiler5">Тексты и&nbsp;макеты для размещения на&nbsp;платформах
-                по
-                привлечению исполнителей, скрипты по&nbsp;обработке откликов</div>
-
-            <div class="partner-advantages__adv adv6">Юридическая помощь</div>
-            <div class="partner-advantages__adv-spoiler spoiler6">Открытие ООО/ИП, открытие счёта, помощь
-                в&nbsp;подготовке
-                всех необходимых документов, консультация по&nbsp;юридическим вопросам и&nbsp;т.д.</div>
-
-            <div class="partner-advantages__adv adv7">Внутренний трафик</div>
-            <div class="partner-advantages__adv-spoiler spoiler7">Трафик кандидатов, которые уже зарегистрированы в
-                нашей
-                системе. Вам остается только вывести их&nbsp;в&nbsp;работу, без затрат на&nbsp;рекламу
-                и&nbsp;размещение:)</div>
-
-            <div class="partner-advantages__adv adv8">Реферальные программы</div>
-            <div class="partner-advantages__adv-spoiler spoiler8">Различные вариации дополнительных бонусов для
-                партнеров
-                на&nbsp;протяжении всего сотрудничества</div>
-
-            <div class="partner-advantages__adv adv9">Топливная программа</div>
-            <div class="partner-advantages__adv-spoiler spoiler9">Выгодные условия по&nbsp;топливу</div>
-
-            <div class="partner-advantages__adv adv10">Обучение </div>
-            <div class="partner-advantages__adv-spoiler spoiler10">Обучающий материал, тренинги для повышения
-                эффективности вашей команды</div>
-
-            <div class="partner-advantages__adv adv11">Скидки и&nbsp;акции</div>
-            <div class="partner-advantages__adv-spoiler spoiler11">Внутренние акции для штатных курьеров транслируются и
-                на&nbsp;парковых: welcome bonus, &laquo;Приведи Друга&raquo;, повышенный коэффициент, приоритет
-                на&nbsp;город
-                и&nbsp;т.д.</div>
-        </div>
-
-        <p class="partner-advantages__skolkovo">А&nbsp;еще, мы&nbsp;резидент Skolkovo!</p>
-
-        <img class="partner-advantages__ligth1" src="img/part-adv-ligthening1.svg">
-        <img class="partner-advantages__el3" src="img/part-adv-el3.svg">
-        <img class="partner-advantages__ligth2" src="img/part-adv-ligthening2.svg">
-        <img class="partner-advantages__superhero" src="img/tablet-part-adv-hero.svg">
-
-    </section>
-
-    <section class="partner-map">
-        <h2 class="partner-map__title">Мы&nbsp;присутствуем по&nbsp;всей России</h2>
-        <picture>
-            <source srcset="img/part-map-map.webp" type="image/webp"><img class="partner-map__map"
-                src="img/part-map-map.png" alt="">
-        </picture>
-        <p class="partner-map__text">Не&nbsp;нашли свой город? <span id="partner-map-btn">Пишите</span>, подключим!</p>
-        <img class="partner-map__hero" src="img/partner-map-hero.svg">
-        <img class="partner-map__el4" src="img/part-map-el4.svg">
-    </section>
-
-    <!-- Сделать карточки текстом! -->
-    <section class="partner-partners">
-        <h2 class="partner-partners__title">Нам доверяют</h2>
-        <div class="partner-partners__slider">
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/X5.svg" alt="X5">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/vkusvill.svg" alt="vkusvill">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/БургерКинг.svg" alt="БургерКинг">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Окей.svg" alt="Окей">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/BrosBurritos.svg" alt="BrosBurritos">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Ikigai.svg" alt="Ikigai">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Nigde.svg" alt="Nigde">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Бирвайн.svg" alt="Бирвайн">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ВкусноиТочка.svg" alt="Вкусно и Точка">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Кукуруза.svg" alt="Кукуруза">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ЛюбимСытно.svg" alt="ЛюбимСытно">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/МосАптека.svg" alt="МосАптека">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Озерки.svg" alt="Озерки">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ПхалиХинкали.svg" alt="ПхалиХинкали">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/Столетов.svg" alt="Столетов">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ХачоиПури.svg" alt="Хачо и Пури">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ХорошаяАптека.svg" alt="Хорошая Аптека">
-            </div>
-            <div class="partner-partners__slide">
-                <img src="img/partners-icons/ЭркаФарм.svg" alt="ЭркаФарм">
-            </div>
-        </div>
-        <h3 class="partner-partners__cards-title">Уже стали нашими партнёрами</h3>
-        <div class="partner-partners__cards">
+        <div class="newsPage__box center">
             <picture>
-                <source srcset="img/part-card1.webp" type="image/webp"><img src="img/part-card1.jpg" alt="Wings"
-                    class="partner-partners__card">
-            </picture>
-            <picture>
-                <source srcset="img/part-card2.webp" type="image/webp"><img src="img/part-card2.jpg" alt="БИС"
-                    class="partner-partners__card">
-            </picture>
-            <picture>
-                <source srcset="img/part-card3.webp" type="image/webp"><img src="img/part-card3.jpg"
-                    alt="Optimal Delivery" class="partner-partners__card">
-            </picture>
-            <picture>
-                <source srcset="img/part-card4.webp" type="image/webp"><img src="img/part-card4.jpg" alt="Таксопарк 
-                Профит" class="partner-partners__card">
+                <source srcset="img/news-photo1.webp" type="image/webp"><img src="img/news-photo1.jpg" alt="Image 1">
             </picture>
 
-        </div>
-
-        <div class="partner-partners__card-slider">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
-            <input type="radio" name="slider" id="item-4">
-            <div class="partner-partners__cards-slider">
-                <label class="partner-partners__card-slide" for="item-1" id="card-1">
-                    <picture>
-                        <source srcset="img/part-card1.webp" type="image/webp"><img src="img/part-card1.jpg">
-                    </picture>
-                </label>
-
-                <label class="partner-partners__card-slide" for="item-2" id="card-2">
-                    <picture>
-                        <source srcset="img/part-card2.webp" type="image/webp"><img src="img/part-card2.jpg">
-                    </picture>
-                </label>
-
-                <label class="partner-partners__card-slide" for="item-3" id="card-3">
-                    <picture>
-                        <source srcset="img/part-card3.webp" type="image/webp"><img src="img/part-card3.jpg">
-                    </picture>
-                </label>
-
-                <label class="partner-partners__card-slide" for="item-4" id="card-4">
-                    <picture>
-                        <source srcset="img/part-card4.webp" type="image/webp"><img src="img/part-card4.jpg">
-                    </picture>
-                </label>
+            <div class="newsPage__content">
+                <p class="newsPage__date news__date">4/05/2024</p>
+                <h4 class="newsPage__heading news__heading">Команда супергероев ТопGo приняла участие в открытии
+                    мотосезона в Петербурге!
+                </h4>
+                <p class="newsPage__text">
+                    4 мая в Санкт-Петербурге прошло торжественное и самое масштабное открытие мотосезона 2024 года, в
+                    котором приняли участие около 4000 байкеров, том числе и наши Супергерои-курьеры!<br><br>
+                    В 13:00 стартовала колонна, где все мотоциклисты могли показать себя во всей красе. Маршрут состоял
+                    из живописных улиц Петроградской стороны и Крестовского острова. Всё мероприятие прошло настолько
+                    драйвово, что даже арка с открытия не удержалась и попыталась улететь вслед за участниками!<br><br>
+                    Также была открыта отдельная площадка с шатрами от различных мотоклубов. Гости могли проверить свои
+                    силы на спортивных снарядах, научиться оказывать первую помощь и выиграть различные призы.<br><br>
+                    Наши курьеры были настоящими звездами – с ними фотографировались, их снимали, а они – дарили
+                    окружающим улыбки и яркие эмоции своими Супергеройскими костюмами!<br><br>
+                    Это далеко не последнее мероприятие, в котором команда Супергероев примет участие, поэтому
+                    обязательно следите за новостями ТопGo!
+                </p>
             </div>
         </div>
 
-        <img class="partner-partners__cycle" src="img/part-parts-cycle.svg">
-
-    </section>
-
-    <section class="partner-questions">
-        <img class="partner-questions__el5" src="img/part-q-el5.svg">
-        <img class="questions__title" src="img/q-title.svg" alt="Вопрос Ответ">
-
-        <div class="partner-questions__dialog">
-            <img class="partner-questions__smile" src="img/part-q-smile.svg">
-            <img class="partner-questions__hero" src="img/part-q-hero.svg">
-
-            <div class="partner-questions__phrase1 partner-questions__phrase">
-                <p class="partner-questions__text">Я&nbsp;могу стать
-                    вашим партнёром?</p>
-            </div>
-            <div class="partner-questions__phrase2 partner-questions__phrase">
-                <p class="partner-questions__text">Сотрудничество с&nbsp;нами доступно для юридических лиц: ООО
-                    и&nbsp;ИП. А&nbsp;если
-                    вам потребуется помощь в&nbsp;их&nbsp;регистрации, наша команда экспертов готова предоставить
-                    квалифицированную юридическую консультацию или может открыть компанию за&nbsp;вас!</p>
-            </div>
-            <div class="partner-questions__phrase3 partner-questions__phrase">
-                <p class="partner-questions__text">Как я&nbsp;могу стать вашим партнером?</p>
-            </div>
-            <div class="partner-questions__phrase4 partner-questions__phrase">
-                <p class="partner-questions__text"> Заполните форму на&nbsp;сайте, и&nbsp;наш менеджер свяжется
-                    с&nbsp;вами для
-                    обсуждения деталей. Подписание договора происходит с&nbsp;помощью ЭДО и&nbsp;не&nbsp;займёт много
-                    времени:)</p>
-            </div>
-            <div class="partner-questions__phrase5 partner-questions__phrase">
-                <p class="partner-questions__text">Есть&nbsp;ли поддержка?</p>
-            </div>
-            <div class="partner-questions__phrase6 partner-questions__phrase">
-                <p class="partner-questions__text">Конечно! На&nbsp;протяжении всего времени сотрудничества у&nbsp;вас
-                    есть
-                    возможность воспользоваться юридической и&nbsp;диспетчерской службами, которые работают 24/7!</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="partner-form" class="partner-form">
-        <div class="form__title-box">
-            <h2 class="form__title">Остались <span class="red">вопросы</span>?</h2>
-        </div>
-        <p class="form__text">Заполни форму, и&nbsp;мы&nbsp;с&nbsp;тобой свяжемся в&nbsp;рабочее время!</p>
-        <form class="partner-form__form">
-            <input class="partner-form__input" type="text" required placeholder="Имя Фамилия">
-            <input class="partner-form__input" type="tel" required placeholder="Номер телефона">
-            <input class="partner-form__input" type="text" required placeholder="ИНН">
-            <input class="partner-form__input" type="number" required placeholder="Действующий штат курьеров">
-            <input class="partner-form__input" type="text" required placeholder="Название парка">
-            <textarea class="partner-form__input" id="comment" name="comment" rows="2" cols="33"
-                placeholder="Комментарий/Вопрос (по желанию)"></textarea>
-            <p class="partner-form__info">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете, что ознакомились с&nbsp;<a
-                    href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a> и
-                даете согласие на&nbsp;обработку своих
-                персональных данных</p>
-            <button class="form__btn">Отправить</button>
-        </form>
-        <picture>
-            <source srcset="img/form-moto.webp" type="image/webp"><img src="img/form-moto.png" class="form__motohero">
-        </picture>
-        <img src="img/btn-up.svg" alt="Наверх" class="btn-up btn-up_hide">
-    </section>
+        <img class="newsPage__el" src="img/newsPage-el.svg">
+    </main>
 
     <footer class="footer center">
         <div class="footer__contacts">
@@ -559,15 +483,10 @@
                 <a href="https://spb.hh.ru/employer/11013820?hhtmFrom=vacancy"
                     class="footer__links_title footer__link-vacancy">Вакансии компании</a>
                 <p class="footer__company-info">Услуги оказывает ООО &laquo;ТОПГО СЕРВИС&raquo;, ОГРН: 1247800032534,
-                    ИНН:
-                    7811797460</p>
+                    ИНН: 7811797460</p>
             </div>
         </div>
     </footer>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/app.js"></script>
 
     <script>
         /*Проверка поддержки webp, добавление класса webp или no-webp для HTML*/
@@ -591,23 +510,102 @@ function isWebp() {
 }
 
 isWebp();
-        const advBlocks = document.querySelectorAll('.partner-advantages__adv');
-        const spoilerElements = document.querySelectorAll('.partner-advantages__adv-spoiler');
+        //заказ звонка форма
+        let button = document.querySelector(".top__tel_icon");
+        let close = document.querySelector(".top__tel_form-close");
+        let form = document.querySelector(".header__form");
 
-        if (window.innerWidth < 1024) {
-            // Добавляем событие на каждый блок "adv"
-            advBlocks.forEach((block, index) => {
-                block.addEventListener('click', () => {
-                    // Убираем все скрытые элементы
-                    spoilerElements.forEach((element) => {
-                        element.style.display = 'none';
-                    });
+        // Устанавливаем начальное состояние блока формы
+        form.style.display = "none";
+        close.style.display = "none";
 
-                    // Показываем соответствующий элемент
-                    spoilerElements[index].style.display = 'block';
-                });
-            });
+        // Добавляем обработчик события на кнопку
+        button.addEventListener("click", function () {
+            if (form.style.display === "none") {
+                form.style.display = "block";
+                close.style.display = "block";
+                button.style.display = "none";
+                close.style.opacity = 0;
+                form.style.opacity = 0;
+                // Плавное появление блока
+                fadeIn(form);
+                fadeIn(close);
+            } else {
+                fadeOut(form);
+                fadeOut(close);
+            }
+        });
+
+        close.addEventListener("click", function () {
+            button.style.display = "block";
+            close.style.display = "none";
+            fadeOut(form);
+        });
+
+        // Функция для плавного появления блока
+        function fadeIn(element) {
+            let opacity = 0;
+            const timer = setInterval(function () {
+                if (opacity >= 1) {
+                    clearInterval(timer);
+                }
+                element.style.opacity = opacity;
+                opacity += 0.1;
+            }, 40);
         }
+
+        // Функция для плавного исчезновения блока
+        function fadeOut(element) {
+            let opacity = 1;
+            const timer = setInterval(function () {
+                if (opacity <= 0) {
+                    element.style.display = "none";
+                    clearInterval(timer);
+                }
+                element.style.opacity = opacity;
+                opacity -= 0.1;
+            }, 30);
+        }
+
+        //burger-menu
+
+        let burgerBtn = document.querySelector(".header__burger");
+
+        if (window.innerWidth < 768 && window.innerHeight < 1000) {
+            burgerBtn.style.display = "block";
+        }
+
+        let burgerClose = document.querySelector(".header__burger-close");
+
+        burgerClose.style.display = "none";
+
+        let burgerMenu = document.querySelector(".header__burger-menu");
+
+        burgerMenu.style.display = "none";
+
+        burgerBtn.addEventListener("click", function () {
+            if (burgerMenu.style.display === "none") {
+                burgerMenu.style.opacity = 0;
+                burgerClose.style.opacity = 0;
+                burgerClose.style.display = "block";
+                burgerBtn.style.display = "none";
+                burgerMenu.style.display = "flex";
+                fadeIn(burgerClose);
+                fadeIn(burgerMenu);
+            } else {
+                fadeOut(burgerClose);
+                fadeOut(burgerMenu);
+            }
+        });
+
+        burgerClose.addEventListener("click", function () {
+            burgerClose.style.display = "none";
+            burgerBtn.style.opacity = 0;
+            burgerBtn.style.display = "block";
+            fadeIn(burgerBtn);
+            fadeOut(burgerMenu);
+        });
+
     </script>
 </body>
 

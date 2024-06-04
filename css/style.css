@@ -80,6 +80,7 @@
   font-style: normal;
 }
 
+
 .header__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7844,6 +7845,8 @@ footer {
     width: 100%;
   }
 }
+
+.webp .newsPage { background-image: url(../img/newsPage-bg.webp); }
 
 .webp .partner-top{ background-image: url(../img/part-bg-top.webp); }
 

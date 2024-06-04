@@ -173,9 +173,9 @@ btnUp.onclick = () => {
 };
 
 //заказ звонка форма
-const button = document.querySelector(".top__tel_icon");
-const close = document.querySelector(".top__tel_form-close");
-const form = document.querySelector(".header__form");
+let button = document.querySelector(".top__tel_icon");
+let close = document.querySelector(".top__tel_form-close");
+let form = document.querySelector(".header__form");
 
 // Устанавливаем начальное состояние блока формы
 form.style.display = "none";
@@ -237,11 +237,11 @@ if (window.innerWidth < 768 && window.innerHeight < 1000) {
   burgerBtn.style.display = "block";
 }
 
-const burgerClose = document.querySelector(".header__burger-close");
+let burgerClose = document.querySelector(".header__burger-close");
 
 burgerClose.style.display = "none";
 
-const burgerMenu = document.querySelector(".header__burger-menu");
+let burgerMenu = document.querySelector(".header__burger-menu");
 
 burgerMenu.style.display = "none";
 
