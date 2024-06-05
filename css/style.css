@@ -5992,7 +5992,7 @@ footer {
     bottom: 10%;
   }
 
-  .top {
+  /* .top {
     background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: bottom;
@@ -6006,7 +6006,7 @@ footer {
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-  }
+  } */
 
   .top__heading {
     font-size: 16px;
