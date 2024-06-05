@@ -399,7 +399,7 @@
             <h2 class="form__title">Остались <span class="red">вопросы</span>?</h2>
         </div>
         <p class="form__text">Заполни форму, и&nbsp;мы&nbsp;с&nbsp;тобой свяжемся в&nbsp;рабочее время!</p>
-        <form class="partner-form__form">
+        <!-- <form class="partner-form__form">
             <input class="partner-form__input" type="text" required placeholder="Имя Фамилия">
             <input class="partner-form__input" type="tel" required placeholder="Номер телефона">
             <input class="partner-form__input" type="text" required placeholder="ИНН">
@@ -412,7 +412,23 @@
                 даете согласие на&nbsp;обработку своих
                 персональных данных</p>
             <button class="form__btn">Отправить</button>
+        </form> -->
+
+        <form class="partner-form__form" method="post" action="/mail.php">
+            <input class="partner-form__input" type="text" required="" placeholder="Имя Фамилия" name="name">
+            <input class="partner-form__input" type="tel" required="" placeholder="Номер телефона" name="phone">
+            <input class="partner-form__input" type="text" placeholder="ИНН" name="inn">
+            <input class="partner-form__input" type="number" placeholder="Действующий штат курьеров" name="curierAmount">
+            <input class="partner-form__input" type="text" placeholder="Название парка" name="parkName">
+            <textarea class="partner-form__input" id="comment" required="" name="comment" rows="2" cols="33" placeholder="Комментарий/Вопрос"></textarea>
+	        <input style="visibility: hidden;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" value="k.grebenshikova@topgo.group" name="mailTo">
+            <p class="partner-form__info">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете, что ознакомились с&nbsp;<a
+                href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a> и
+            даете согласие на&nbsp;обработку своих
+            персональных данных</p>
+            <button class="form__btn">Отправить</button>
         </form>
+
         <picture>
             <source srcset="img/form-moto.webp" type="image/webp"><img src="img/form-moto.png" class="form__motohero">
         </picture>

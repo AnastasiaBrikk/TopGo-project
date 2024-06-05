@@ -371,7 +371,7 @@
             <h2 class="form__title">Остались <span class="red">вопросы</span>?</h2>
         </div>
         <p class="form__text">Заполни форму, и&nbsp;мы&nbsp;с&nbsp;тобой свяжемся в&nbsp;рабочее время!</p>
-        <form class="partner-form__form client-form">
+        <!-- <form class="partner-form__form client-form">
             <input class="partner-form__input client-form__input1" type="text" required placeholder="Имя Фамилия">
             <input class="partner-form__input client-form__input2" type="tel" required placeholder="Номер телефона">
             <input class="partner-form__input client-form__input3" type="text" placeholder="Почта (по желанию)">
@@ -393,7 +393,28 @@
                 персональных данных
             </p>
             <button class="form__btn client-form__input11">Отправить</button>
+        </form> -->
+
+        <form class="partner-form__form client-form" method="post" action="/mail.php">
+            <input class="partner-form__input client-form__input1" type="text" required="" placeholder="Имя Фамилия" name="name">
+            <input class="partner-form__input client-form__input2" type="tel" required="" placeholder="Номер телефона" name="phone">
+            <input class="partner-form__input client-form__input3" type="text" placeholder="Почта (по желанию)" name="email">
+            <input class="partner-form__input client-form__input4" type="text" required="" placeholder="Название компании/бренда" name="companyName">
+            <input class="partner-form__input client-form__input5" type="text" required="" placeholder="Что планируется доставлять" name="productType">
+            <input class="partner-form__input client-form__input6" type="text" required="" placeholder="Среднее кол-во доставок в день" name="deliveryPerDay">
+            <input class="partner-form__input client-form__input7" type="text" required="" placeholder="ИНН" name="inn">
+            <input class="partner-form__input client-form__input8" type="number" required="" placeholder="Кол-во городов присутствия" name="citiesAmount">
+            <textarea class="partner-form__input client-form__input9" id="comment" name="comment" rows="2" cols="33" placeholder="Комментарий/Вопрос(по желанию)"></textarea>
+            <input style="visibility: hidden;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" value="sales@topgo.group">
+            <p class="partner-form__info client-form__input10">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете, что
+                ознакомились с
+                <a href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a>
+                и&nbsp;даете согласие на&nbsp;обработку своих
+                персональных данных
+            </p>
+            <button class="form__btn client-form__input11">Отправить</button>
         </form>
+
         <picture>
             <source srcset="img/form-moto.webp" type="image/webp"><img src="img/form-moto.png"
                 class="form__motohero client-form__motohero">
