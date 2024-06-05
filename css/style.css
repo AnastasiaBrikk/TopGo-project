@@ -4099,11 +4099,15 @@ footer {
   }
 
   .partner-top {
-    background-image: url("/img/mobile-long-bg-top.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-image: url("../img/mobile-long-bg-top.jpg");
+    height: 93vh;
+    background-position: center;
     background-size: cover;
-    height: 91vh;
+    background-attachment: inherit;
+   background-repeat: no-repeat;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
   }
 
   .partner-top__box {
@@ -5271,22 +5275,24 @@ footer {
   }
 
   .top {
-    background-image: url("/img/mobile-long-bg-top.jpg");
+    background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: center;
     background-size: cover;
-    /* -webkit-background-size: 100%;
-     -moz-background-size: 100%; */
-    background-repeat: no-repeat;
+    background-attachment: inherit;
+   background-repeat: no-repeat;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
   }
 
-  .partner-top {
+  /* .partner-top {
     background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-  }
+  } */
 
 
   .top__main-logo {
@@ -5897,12 +5903,15 @@ footer {
     -webkit-background-size: 100%;
      -moz-background-size: 100%; */
 
-    background-image: url("/img/mobile-small-bg-top.jpg");
+    background-image: url("../img/mobile-small-bg-top.jpg");
     height: 91vh;
     background-position: center;
     background-size: cover;
-    
     background-repeat: no-repeat;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   background-attachment: inherit;
+   -webkit-background-size: cover;
   }
 
   .partner-top {
@@ -5913,13 +5922,17 @@ footer {
     -webkit-background-size: 100%;
      -moz-background-size: 100%; 
     background-repeat: no-repeat; */
-    background-image: url("/img/mobile-small-bg-top.jpg");
+    background-image: url("../img/mobile-small-bg-top.jpg");
     height: 91vh;
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
+    background-attachment: inherit;
      -moz-background-size: cover; 
     background-repeat: no-repeat;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
   }
 
   .partner-about {
@@ -5938,13 +5951,15 @@ footer {
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat; */
-    background-image: url("/img/mobile-long-bg-top.jpg");
+    background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
      -moz-background-size: cover; 
     background-repeat: no-repeat;
+   -o-background-size: cover;
+   background-attachment: inherit;
   }
 
   .partner-top {
@@ -5954,13 +5969,15 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat; */
 
-    background-image: url("/img/mobile-long-bg-top.jpg");
+    background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
      -moz-background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: inherit;
+     -moz-background-size: cover; 
   }
 
 
@@ -6486,6 +6503,7 @@ footer {
     min-height: 480px;
     max-height: 100vh;
     background-size: 100%;
+    background-attachment: inherit;
     background-position: bottom;
   }
 
@@ -7515,6 +7533,7 @@ footer {
     background-position: center;
     height: 66vh;
     background-size: contain;
+    background-attachment: inherit;
   }
 
   .top__heading {
@@ -8087,6 +8106,7 @@ footer {
     height: 91vh;
     background-repeat: no-repeat;
     background-size: contain;
+    background-attachment: inherit;
   }
 
   .top__heading {
@@ -9102,12 +9122,5 @@ footer {
 
   .questions {
     background-image: url(../img/tablet-bg-q.webp);
-  }
-}
-
-@media (max-width: 360px) and (min-width: 270px) {
-
-  .about {
-    background-image: url(../img/mobile-bg-about.webp);
   }
 }
