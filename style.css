@@ -5996,7 +5996,7 @@ footer {
     background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: bottom;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -6004,7 +6004,7 @@ footer {
     background-image: url("../img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: bottom;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
