@@ -918,6 +918,36 @@
   width: 56vw;
 }
 
+.partner-map__input {
+  background-color: #fff;
+  border: 1px solid #6C6C6C;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  padding: 8px 13px;
+  color: #2C2D35;
+  font-size: 13px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 15;
+}
+
+.partner-map__options {
+  background-color: #fff;
+  border: 1px solid #6C6C6C;
+  border-radius: 5px;
+  width: 400px;
+  height: 30px;
+  padding: 8px 13px;
+  color: #2C2D35;
+  font-size: 13px;
+  position: absolute;
+  top: 30%;
+  right: 28%;
+  z-index: 15;
+}
+
 .partner-map__el4 {
   position: absolute;
   right: 0;
