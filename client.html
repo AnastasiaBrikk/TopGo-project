@@ -93,13 +93,22 @@
     </header>
 
     <div class="header__form">
-        <form action="#">
+        <!-- <form action="#">
             <input id="header__form-name" class="header__form-input" type="text" name="name" placeholder="Ваше имя"
                 required>
             <input id="header__form-number" class="header__form-input" type="tel" name="number"
                 placeholder="Номер телефона" required>
             <button class="header__form-btn">Заказать звонок</button>
-        </form>
+        </form> -->
+
+
+        <form action="/order_call.php" method="post">
+            <!-- <span class="attention hidden">перед сохранением страницы необходимо закрыть эту форму</span> -->
+                <input id="header__form-name" class="header__form-input" type="text" name="name" placeholder="Ваше имя" required="">
+                <input id="header__form-number" class="header__form-input" type="tel" name="number" placeholder="Номер телефона" required="">
+                    <input class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" data-value="partner@topgo.group">
+                <button class="header__form-btn">Заказать звонок</button>
+            </form>
     </div>
 
     <section class="top">
