@@ -914,6 +914,15 @@
   margin: 0 auto;
 }
 
+.ymaps-2-1-79-placemark-overlay:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+.ymaps-2-1-79-user-selection-none:last-of-type {
+  display: none;
+  visibility: hidden;
+}
 
 .partner-map__inputs {
   position: absolute;
