@@ -4099,9 +4099,10 @@ footer {
   }
 
   .partner-top {
-    background-image: url(../img/mobile-long-bg-top.jpg);
+    background-image: url("/img/mobile-long-bg-top.jpg");
     background-position: bottom;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 91vh;
   }
 
@@ -5270,7 +5271,7 @@ footer {
   }
 
   .top {
-    background-image: url("../img/mobile-long-bg-top.jpg");
+    background-image: url("/img/mobile-long-bg-top.jpg");
     height: 93vh;
     background-position: bottom;
     background-size: 100%;

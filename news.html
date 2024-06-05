@@ -9,7 +9,7 @@
 </head>
 
 <style>
-    .no-webp .newsPage {
+    .newsPage {
         background-image: url("../img/newsPage-bg.jpg");
     }
 
@@ -84,17 +84,12 @@
             visibility: visible;
         }
 
-        .no-webp .newsPage {
-            background-image: url("/img/tablet-bg-news-vertical.jpg");
-        }
-
-        .webp .newsPage {
-            background-image: url("/img/tablet-bg-news-vertical.webp");
-        }
-
         .newsPage {
+            background-image: url("/img/tablet-bg-news-vertical.jpg");
             min-height: 85vh;
             padding-top: 50px;
+            padding-right: 40px;
+            padding-left: 40px;
         }
 
         .newsPage__box {
@@ -126,12 +121,11 @@
             visibility: visible;
         }
 
-        .no-webp .newsPage {
-            background-image: url("/img/tablet-bg-newsPage-horizontal.jpg");
-        }
 
-        .webp .newsPage {
-            background-image: url("/img/tablet-bg-newsPage-horizontal.webp");
+        .newsPage {
+            background-image: url("/img/tablet-bg-newsPage-horizontal.jpg");
+            padding-right: 40px;
+            padding-left: 40px;
         }
 
         .newsPage {
@@ -157,16 +151,14 @@
     }
 
     @media (max-width: 767px) {
-        .no-webp .newsPage {
-            background-image: url("/img/mobile-newsPage-bg.jpg");
-        }
 
-        .webp .newsPage {
-            background-image: url("/img/mobile-newsPage-bg.webp");
-        }
+        /* background-image: url("/img/mobile-newsPage-bg.webp"); */
 
         .newsPage {
+            background-image: url("/img/mobile-newsPage-bg.jpg");
             padding-top: 54px;
+            padding-right: 30px;
+            padding-left: 30px;
         }
 
         .newsPage__box {
@@ -174,6 +166,10 @@
             justify-content: center;
             flex-direction: column;
         }
+        .newsPage__box img {
+        min-width: 250px;
+        width: 100%;
+    }
 
         .newsPage__content {
             width: 100%;
