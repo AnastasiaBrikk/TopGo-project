@@ -799,12 +799,11 @@
         </form> -->
 
         <form action="/order_call.php" method="post">
-            <!-- <span class="attention hidden">перед сохранением страницы необходимо закрыть эту форму</span> -->
             <input id="header__form-name" class="header__form-input" type="text" name="name" placeholder="Ваше имя"
                 required="">
             <input id="header__form-number" class="header__form-input" type="tel" name="number"
                 placeholder="Номер телефона" required="">
-            <input class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo"
+            <input class="hidden" style="display: none;" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo"
                 data-value="partner@topgo.group">
             <button class="header__form-btn">Заказать звонок</button>
         </form>
@@ -1138,7 +1137,7 @@
             <input class="partner-form__input" type="text" placeholder="Название парка" name="parkName">
             <textarea class="partner-form__input" id="comment" required="" name="comment" rows="2" cols="33"
                 placeholder="Комментарий/Вопрос"></textarea>
-            <input style="visibility: hidden;" class="hidden" type="email" required="" placeholder="получатель"
+            <input style="display: none;" class="hidden" type="email" required="" placeholder="получатель"
                 id="mailTo" value="k.grebenshikova@topgo.group" name="mailTo">
             <p class="partner-form__info">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете, что ознакомились с&nbsp;<a
                     href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a> и

@@ -103,10 +103,9 @@
 
 
         <form action="/order_call.php" method="post">
-            <!-- <span class="attention hidden">перед сохранением страницы необходимо закрыть эту форму</span> -->
                 <input id="header__form-name" class="header__form-input" type="text" name="name" placeholder="Ваше имя" required="">
                 <input id="header__form-number" class="header__form-input" type="tel" name="number" placeholder="Номер телефона" required="">
-                    <input class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" data-value="partner@topgo.group">
+                    <input class="hidden" style="display: none;" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" data-value="partner@topgo.group">
                 <button class="header__form-btn">Заказать звонок</button>
             </form>
     </div>
@@ -414,7 +413,7 @@
             <input class="partner-form__input client-form__input7" type="text" required="" placeholder="ИНН" name="inn">
             <input class="partner-form__input client-form__input8" type="number" required="" placeholder="Кол-во городов присутствия" name="citiesAmount">
             <textarea class="partner-form__input client-form__input9" id="comment" name="comment" rows="2" cols="33" placeholder="Комментарий/Вопрос(по желанию)"></textarea>
-            <input style="visibility: hidden;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" value="sales@topgo.group">
+            <input style="display: none;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" value="sales@topgo.group">
             <p class="partner-form__info client-form__input10">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете, что
                 ознакомились с
                 <a href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a>

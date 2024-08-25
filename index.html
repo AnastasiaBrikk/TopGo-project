@@ -92,10 +92,9 @@
 
     <div class="header__form">
         <form action="/order_call.php" method="post">
-            <!-- <span class="attention hidden">перед сохранением страницы необходимо закрыть эту форму</span> -->
                 <input id="header__form-name" class="header__form-input" type="text" name="name" placeholder="Ваше имя" required="">
                 <input id="header__form-number" class="header__form-input" type="tel" name="number" placeholder="Номер телефона" required="">
-                    <input class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" data-value="partner@topgo.group">
+                    <input class="hidden" style="display: none;" type="email" placeholder="получатель"  required="" id="mailTo" name="mailTo" data-value="partner@topgo.group">
                 <button class="header__form-btn">Заказать звонок</button>
             </form>
     </div>
@@ -379,7 +378,7 @@
                 <input class="form__input" type="text" required="" placeholder="Имя Фамилия" name="name">
                 <input class="form__input" type="email" required="" placeholder="Электронная почта" name="email">
                 <textarea class="form__input" id="comment" name="comment" rows="3" cols="33" required="" placeholder="Комментарий/Вопрос"></textarea>
-                <input style="visibility: hidden;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" value="partner@topgo.group">
+                <input style="display: none;" class="hidden" type="email" required="" placeholder="получатель" id="mailTo" name="mailTo" value="partner@topgo.group">
                 <p class="form__info">Нажимая на&nbsp;кнопку, вы&nbsp;подтверждаете,
                     что ознакомились с&nbsp;<a href="https://job.topgo.group/privacy/" class="form__info-link">политикой конфиденциальности</a> и&nbsp;даете согласие на&nbsp;обработку своих персональных данных</p>
                 <button class="form__btn">Отправить</button>
